@@ -161,9 +161,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <!-- <w>246</w> -->
    <!-- <h>246</h> -->
    <x>572</x>
-   <y>362</y>
+   <y>372</y>
    <w>226</w>
-   <h>226</h>
+   <h>236</h>
   </instrument>
 
   <instrument include="../../Instruments/vsi-c172s.xml">
