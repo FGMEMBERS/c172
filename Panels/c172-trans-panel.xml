@@ -95,25 +95,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../../Instruments/throttle-knob.xml">
-   <name>Throttle Knob</name>
-   <x>660</x>
-   <y>-100</y>
-   <w>80</w>
-   <h>80</h>
-  </instrument>
-
-  <instrument include="../../Instruments/mixture-knob.xml">
-   <name>Fuel Mixture Knob</name>
-   <x>780</x>
-   <y>-100</y>
-   <w>80</w>
-   <h>80</h>
-  </instrument>
-
   <instrument include="../../Instruments/single-magneto-switch.xml">
    <name>Magneto switch panel</name>
-   <x>250</x>
+   <x>50</x>
    <y>-125</y>
   </instrument>
 
