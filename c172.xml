@@ -229,7 +229,7 @@
        <COEFFICIENT NAME="CYb" TYPE="VALUE">
          Side_force_due_to_beta
          FG_QBAR|FG_WINGAREA|FG_BETA
-         -1.4
+         -1.0
        </COEFFICIENT>
 
        <COEFFICIENT NAME="CYda" TYPE="VALUE">
@@ -241,7 +241,7 @@
       <COEFFICIENT NAME="CYdr" TYPE="VALUE">
          Side_force_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_RUDDER_POS
-         0.45
+         0.36
       </COEFFICIENT>
 
     </AXIS>
@@ -269,13 +269,13 @@
        <COEFFICIENT NAME="Clda" TYPE="VALUE">
          Roll_moment_due_to_aileron
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_AILERON_POS
-         0.09
+         0.12
        </COEFFICIENT>
 
        <COEFFICIENT NAME="Cldr" TYPE="VALUE">
          Roll_moment_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_RUDDER_POS
-         -0.0147
+         -0.0117
         </COEFFICIENT>
 
       </AXIS>
@@ -348,7 +348,7 @@
        <COEFFICIENT NAME="Cndr" TYPE="VALUE">
          Yaw_moment_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_RUDDER_POS
-         -0.0657
+         -0.053
        </COEFFICIENT>
 
     </AXIS>
