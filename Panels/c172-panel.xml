@@ -52,7 +52,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>32</h>
   </instrument>
 
-<!-- engine guage cluster --> 
+<!-- engine guage cluster -->  
   <instrument include="../Instruments/clock.xml">
    <name>Chronometer</name>
    <x>155</x>
@@ -100,9 +100,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <w>120</w>
    <h>120</h>
   </instrument>
-<!-- end engine guages cluster -->
+<!-- end engine gauges cluster -->
 
-<!-- engine controls cluster --> 
+<!-- engine controls cluster -->  
  
   <instrument include="../Instruments/rpm.xml">
    <name>RPM Gauge</name>
@@ -123,22 +123,22 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <x>865</x>
    <y>360</y>
   </instrument>
- 
+<!--
   <instrument include="../Instruments/magneto-switch.xml">
    <name>Magneto switch panel</name>
    <x>115</x>
    <y>358</y>
   </instrument>
-<!--  
+
   <instrument include="../Instruments/toggle-switch.xml">
    <name>toggle switch </name>
    <x>115</x>
    <y>350</y>
   </instrument>
 -->
-<!--  end engine controls cluster -->
+<!-- end engine controls cluster -->
   
-<!-- controls visual feedback cluster --> 
+<!-- controls visual feedback cluster -->  
 
   <instrument include="../Instruments/flap.xml">
    <name>Flaps Control</name>
@@ -216,9 +216,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
-<!-- radio nav instruments --> 
+<!-- radio nav instruments  -->
 
-  <instrument include="../Instruments/hsi.xml">
+  <instrument include="../Instruments/nav1.xml">
    <name>VOR 1 Gauge</name>
    <x>665</x>
    <y>645</y>
