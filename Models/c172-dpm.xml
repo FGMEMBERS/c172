@@ -2,14 +2,19 @@
 
 <PropertyList>
 
+ <model>
+  <path>Models/Airport/windsock.xml</path>
+ </model>
+
  <path>c172-dpm.ac</path>
 
  <!-- LOD for the model as a whole -->
 
- <range>
+ <animation>
+  <type>range</type>
   <min-m>0</min-m>
   <max-m>10000</max-m>
- </range>
+ </animation>
 
  <!-- LOD for specific objects -->
 
