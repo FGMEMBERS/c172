@@ -46,7 +46,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <instrument include="../../Instruments/oat.xml">
    <name>OAT</name>
    <x>86</x>
-   <y>705</y>
+   <y>711</y>
    <w>75</w>
    <h>31</h>
   </instrument>
@@ -55,17 +55,17 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <instrument include="../../Instruments/ann-c172s.xml">
    <name>Annunciator</name>
    <x>569</x>
-   <y>751</y>
+   <y>756</y>
    <w>225</w>
    <h>32</h>
   </instrument>
 
- <!-- engine guage cluster -->  
+ <!-- engine gauge cluster -->  
 
   <instrument include="../../Instruments/fuel-c172s.xml">
    <name>Fuel Gauge</name>
    <x>87</x>
-   <y>595</y>
+   <y>601</y>
    <w>165</w>
    <h>165</h>
   </instrument>
@@ -73,7 +73,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/egt-ff-c172s.xml">
    <name>Exhaust Gas Temperature Gauge</name>
    <x>89</x>
-   <y>422</y>
+   <y>428</y>
    <w>165</w>
    <h>165</h>
   </instrument>
@@ -82,7 +82,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/oil-c172s.xml">
    <name>Oil Gauge</name>
    <x>87</x>
-   <y>249</y>
+   <y>255</y>
    <w>165</w>
    <h>165</h>
   </instrument>
@@ -90,7 +90,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/vac-amp-c172s.xml">
    <name>Vacuum Pressure Gauge</name>
    <x>88</x>
-   <y>75</y>
+   <y>81</y>
    <w>165</w>
    <h>165</h>
   </instrument>
@@ -99,7 +99,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/adf-c172s.xml">
    <name>ADF Gauge</name>
    <x>305</x>
-   <y>110</y>
+   <y>117</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -111,7 +111,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/rpm-c172s.xml">
    <name>RPM Gauge</name>
    <x>838</x>
-   <y>113</y>
+   <y>120</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -123,7 +123,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/asi-c172s.xml">
    <name>Airspeed Indicator</name>
    <x>305</x>
-   <y>605</y>
+   <y>611</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -131,7 +131,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/ati-c172s.xml">
    <name>Attitude Gyro</name>
    <x>570</x>
-   <y>605</y>
+   <y>611</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -139,7 +139,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/alt-c172s.xml">
    <name>Altimeter</name>
    <x>838</x>
-   <y>606</y>
+   <y>612</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -147,7 +147,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/trn-c172s.xml">
    <name>Turn Coordinator</name>
    <x>304</x>
-   <y>360</y>
+   <y>366</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -161,7 +161,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <!-- <w>246</w> -->
    <!-- <h>246</h> -->
    <x>572</x>
-   <y>372</y>
+   <y>377</y>
    <w>226</w>
    <h>236</h>
   </instrument>
@@ -169,7 +169,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/vsi-c172s.xml">
    <name>Vertical Velocity Indicator</name>
    <x>837</x>
-   <y>361</y>
+   <y>367</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -190,7 +190,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <nav-needles-pivot>/sim/instrument-options/nav[1]/needles-pivot</nav-needles-pivot>
   </params>
   <x>572</x>
-  <y>113</y>
+  <y>120</y>
   <w>246</w>
   <h>246</h>
   </instrument>
