@@ -287,7 +287,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/adf-radio.xml">
    <name>ADF Radio</name>
    <x>880</x>
-   <y>189</y>
+   <y>167</y>
   </instrument>
 
   <instrument include="../../Instruments/autopilot.xml">
@@ -307,4 +307,3 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 </PropertyList>
-
