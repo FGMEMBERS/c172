@@ -117,7 +117,7 @@
       YLOC    0.0
       ZLOC   59.4
       PITCH   0.0
-      YAW     0.0
+      YAW    -0.0872
     </AC_THRUSTER>
 
     <AC_TANK TYPE="FUEL" NUMBER="0">
@@ -369,7 +369,7 @@
       <COEFFICIENT NAME="Cmalpha" TYPE="VALUE">
         Pitch_moment_due_to_alpha
         FG_QBAR|FG_WINGAREA|FG_CBAR|FG_ALPHA
-        -1.8
+        -0.9
       </COEFFICIENT>
       <COEFFICIENT NAME="CmDf" TYPE="VECTOR">
          Delta_pitching_moment_due_to_flap_deflection
