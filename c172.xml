@@ -1,4 +1,15 @@
 <FDM_CONFIG NAME="c172" VERSION="1.38">
+<!--
+
+  File:        c172.xml.xml
+  Author:      Tony Peden
+  CVS Version: $Id$
+
+  Function: Models a Cessna 172
+  Notes:    Try running FlightGear using this command line,
+            fgfs --fdm=jsb --aircraft=c172
+-->
+
   <METRICS>
 
     <COMMENT>
@@ -54,11 +65,14 @@
     -->
     </COMMENT>
 
-     AC_GEAR	NOSE	    -6.8   0.0  -24.2  900  300  0.01  0.6 0.02 STEERABLE NONE 20
+     AC_GEAR	NOSE        -6.8   0.0 -24.2  900   300  0.01  0.6 0.02 STEERABLE NONE 20
      AC_GEAR	LEFT_MAIN   58.2 -43.0 -17.9  2700  800  0.01  0.6 0.02 CASTERED  LEFT  0
      AC_GEAR	RIGHT_MAIN  58.2  43.0 -17.9  2700  800  0.01  0.6 0.02 CASTERED  RIGHT 0
+     AC_GEAR	TAIL_SKID  188.0  0.0    8.0 20000 1000  0.2   0.2 0.2  FIXED NONE 0
+     AC_GEAR	LEFT_TIP    43.2 -214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
+     AC_GEAR	RIGHT_TIP   43.2  214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
 
-  </UNDERCARRIAGE>
+</UNDERCARRIAGE>
   
   <PROPULSION>
 
@@ -87,7 +101,7 @@
     -->
     </COMMENT>
 
-    <AC_ENGINE FILE="eng_io320">
+    <AC_ENGINE FILE="engIO360C">
       XLOC   48.0
       YLOC    0.0
       ZLOC   59.4
@@ -96,7 +110,7 @@
       FEED      0
     </AC_ENGINE>
       
-    <AC_THRUSTER FILE="prop_generic2f">
+    <AC_THRUSTER FILE="prop30FP2B">
       XLOC   48.0
       YLOC    0.0
       ZLOC   59.4
@@ -331,9 +345,9 @@
          FG_FLAPS_POS
          FG_QBAR|FG_WINGAREA|FG_CBAR
          0    0
-         10     -0.0654
+         10  -0.0654
          20  -0.0981
-         30  -0.0114
+         30  -0.1140
        </COEFFICIENT>      
       <COEFFICIENT NAME="Cmq" TYPE="VALUE">
          Pitch_moment_due_to_pitch_rate
