@@ -75,7 +75,7 @@
   <connector>
     <input>Alternator 1</input>
     <output>Virtual Bus 1</output>
-    <switch>/controls/switches/alt-master</switch>
+    <switch>/controls/switches/master-alt</switch>
   </connector>
 
   <connector>
@@ -86,7 +86,7 @@
   <connector>
     <input>Battery 1</input>
     <output>Virtual Bus 1</output>
-    <switch>/controls/switches/bat-master</switch>
+    <switch>/controls/switches/master-bat</switch>
   </connector>
 
   <!-- connect starter output -->
@@ -94,7 +94,7 @@
   <connector>
     <input>Virtual Bus 1</input>
     <output>Starter 1 Power</output>
-    <switch>/controls/switches/starter</switch>
+    <switch>/controls/starter[0]</switch>
   </connector>
 
   <!-- connect bus 1 & 2 -->
@@ -125,14 +125,14 @@
     <input>Electrical Bus 1</input>
     <output>Avionics Bus 1</output>
     <switch>/controls/circuit-breakers/avn-bus-1</switch>
-    <switch>/controls/switches/avionics-master</switch>
+    <switch>/controls/switches/master-avionics</switch>
   </connector>
 
   <connector>
     <input>Electrical Bus 2</input>
     <output>Avionics Bus 2</output>
     <switch>/controls/circuit-breakers/avn-bus-2</switch>
-    <switch>/controls/switches/avionics-master</switch>
+    <switch>/controls/switches/master-avionics</switch>
   </connector>
 
 </PropertyList>
