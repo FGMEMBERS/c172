@@ -55,47 +55,47 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- engine guage cluster --> 
   <instrument include="../Instruments/clock.xml">
    <name>Chronometer</name>
-   <x>150</x>
-   <y>645</y>
-   <w>72</w>
-   <h>72</h>
+   <x>155</x>
+   <y>626</y>
+   <w>78</w>
+   <h>78</h>
   </instrument>
 
   <instrument include="../Instruments/egt.xml">
    <name>Exhaust Gas Temperature Gauge</name>
-   <x>150</x>
-   <y>568</y>
-   <w>72</w>
-   <h>72</h>
+   <x>155</x>
+   <y>552</y>
+   <w>78</w>
+   <h>78</h>
   </instrument>
 
   <instrument include="../Instruments/fuel.xml">
    <name>Fuel Gauge</name>
-   <x>75</x>
-   <y>568</y>
-   <w>72</w>
-   <h>72</h>
+   <x>78</x>
+   <y>552</y>
+   <w>78</w>
+   <h>78</h>
   </instrument>
 
   <instrument include="../Instruments/oil.xml">
    <name>Oil Gauge</name>
-   <x>75</x>
-   <y>488</y>
-   <w>72</w>
-   <h>72</h>
+   <x>78</x>
+   <y>475</y>
+   <w>78</w>
+   <h>78</h>
   </instrument>
   
   <instrument include="../Instruments/vacamp.xml">
    <name>Vacuum Pressure Gauge</name>
-   <x>150</x>
-   <y>488</y>
-   <w>72</w>
-   <h>72</h>
+   <x>155</x>
+   <y>475</y>
+   <w>78</w>
+   <h>78</h>
   </instrument>
 
   <instrument include="../Instruments/manifold-press.xml">
    <name>Manifold Pressure Gauge</name>
-   <x>255</x>
+   <x>257</x>
    <y>379</y>
    <w>120</w>
    <h>120</h>
@@ -154,7 +154,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/asi.xml">
    <name>Airspeed Indicator</name>
-   <x>255</x>
+   <x>257</x>
    <y>645</y>
    <w>128</w>
    <h>128</h>
@@ -178,7 +178,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/turn.xml">
    <name>Turn Coordinator</name>
-   <x>255</x>
+   <x>257</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
