@@ -37,7 +37,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <name>Cessna C172 Skyhawk IFR Panel</name>
  <background>Aircraft/c172/Panels/Textures/transparent-bg.rgb</background>
  <w>1424</w>
- <h>288</h>
+ <h>460</h>
 
  <instruments>
 <!-- comical tail number -->
