@@ -2,10 +2,6 @@
 
 <PropertyList>
 
- <model>
-  <path>Models/Airport/windsock.xml</path>
- </model>
-
  <path>c172-dpm.ac</path>
 
  <!-- LOD for the model as a whole -->
