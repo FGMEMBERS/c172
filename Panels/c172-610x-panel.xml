@@ -34,7 +34,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <PropertyList>
 
  <name>Cessna C172 Skyhawk IFR Panel</name>
- <background>Aircraft/c172/Panels/Textures/panel-mini-bg.rgb</background>
+ <background>Aircraft/c172/Panels/Textures/panel-610x-bg.rgb</background>
  <w>1024</w>
  <h>768</h>
  <view-height>5</view-height>
