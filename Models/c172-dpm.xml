@@ -2,7 +2,7 @@
 
 <PropertyList>
 
- <path>c172-dpm.ssg</path>
+ <path>c172-dpm.xml</path>
 
  <animation>
   <type>select</type>
