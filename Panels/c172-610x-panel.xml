@@ -134,9 +134,10 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>246</h>
   </instrument>
 
-  <!-- <instrument include="../../Instruments/hsi-hi.xml"> -->
-  <instrument include="../../Instruments/hdg-c172s.xml">
-   <name>Directional Gyro</name>
+  <!-- <instrument include="../../Instruments/hdg-c172s.xml"> -->
+  <!--  <name>Directional Gyro</name> -->
+  <instrument include="../../Instruments/hsi-bk-hi.xml">
+   <name>Bendix King HSI</name>
    <x>563</x>
    <y>384</y>
    <w>246</w>
@@ -155,7 +156,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- radio nav instruments --> 
 
-  <instrument include="../../Instruments/vor1-c172s.xml">
+  <instrument include="../../Instruments/vor2-c172s.xml">
   <name>VOR 2 Gauge</name>
   <params>
    <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag>
