@@ -154,8 +154,8 @@
   </output>
 
   <output>
-    <name>GPS MFD Power</name>
-    <prop>/systems/electrical/outputs/gps-mfd</prop>
+    <name>GPS Power</name>
+    <prop>/systems/electrical/outputs/gps</prop>
   </output>
 
   <output>
@@ -417,7 +417,7 @@
 
   <connector>
     <input>Avionics Bus 1</input>
-    <output>GPS MFD Power</output>
+    <output>GPS Power</output>
     <switch>
       <prop>/controls/circuit-breakers/gps</prop>
     </switch>
