@@ -36,7 +36,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <background>Aircraft/c172/Panels/Textures/shaped-bg.rgb</background>
  <view-height>427</view-height>
- <!--h>500</h-->
+
  <instruments>
 <!-- comical tail number -->
   <tail_number>
@@ -126,7 +126,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <flaps>
    <path>Aircraft/c172/Instruments/flap.xml</path>
    <x>950</x>
-   <y>75</y>
+   <y>65</y>
   </flaps>
 
   <brake>
@@ -235,7 +235,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <x>880</x>
    <y>371</y>
   </dme>
-
+  
+  <markerbeacon>
+   <path>Aircraft/c172/Instruments/markerbeacon.xml</path>
+   <x>974</x>
+   <y>351</y>
+   </markerbeacon>
+      
   <navcom1-radio>
    <path>Aircraft/c172/Instruments/navcom1-radio.xml</path>
    <x>880</x>
