@@ -119,7 +119,7 @@
       YLOC    0.0
       ZLOC   26.6
       PITCH   0.0
-      YAW     0.0
+      YAW     0
       P_FACTOR 10.0
       SENSE   1.0
     </AC_THRUSTER>
@@ -330,21 +330,14 @@
     </AXIS>
 
     <AXIS NAME="SIDE">
-<!--
-       <COEFFICIENT NAME="CYo" TYPE="VALUE">
-         Side_force_due_to_vertical_tail_incidence
-         FG_QBAR|FG_WINGAREA
-         -0.001284
-       </COEFFICIENT>
--->
        <COEFFICIENT NAME="CYb" TYPE="VECTOR">
          Side_force_due_to_beta
          3
          FG_BETA
          FG_QBAR|FG_WINGAREA
-          0.349  -0.108
+         -0.349   0.108 
           0       0
-         -0.349   0.108
+          0.349  -0.108
        </COEFFICIENT>
 
        <COEFFICIENT NAME="CYda" TYPE="VALUE">
@@ -371,11 +364,6 @@
     </AXIS>
 
     <AXIS NAME="ROLL">
-       <COEFFICIENT NAME="Clo" TYPE="VALUE">
-         Roll_moment_due_to_vertical_tail_incidence
-         FG_QBAR|FG_WINGAREA|FG_WINGSPAN
-         -4.303e-05
-       </COEFFICIENT>
        <COEFFICIENT NAME="Clb" TYPE="VECTOR">
          Roll_moment_due_to_beta
          3
@@ -454,22 +442,15 @@
     </AXIS>
 
     <AXIS NAME="YAW">
-<!--
-       <COEFFICIENT NAME="Cno" TYPE="VALUE">
-         Yaw_moment_due_to_vertical_tail_incidence
-         FG_QBAR|FG_WINGAREA|FG_WINGSPAN
-         0.000563
-       </COEFFICIENT>
--->
 
        <COEFFICIENT NAME="Cnb" TYPE="VECTOR">
          Yaw_moment_due_to_beta
          3
          FG_BETA
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN
-          0.349  0.0227
+         -0.349  -0.0227
           0      0
-         -0.349 -0.0227
+          0.349  0.0227
        </COEFFICIENT>
        <COEFFICIENT NAME="Cnp" TYPE="VALUE">
          Yaw_moment_due_to_roll_rate
@@ -542,7 +523,7 @@
     NOTE that Time is always output with the data.
   -->
   <OUTPUT NAME="JSBout172.csv" TYPE="CSV">
-    RATE_IN_HZ       10
+    RATE_IN_HZ       20
     SIMULATION       OFF
     ATMOSPHERE       ON
     MASSPROPS        ON
