@@ -110,7 +110,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>246</h>
   </instrument>
 
-  <instrument include="../../Instruments/attitude-indicator-hi.xml">
+  <instrument include="../../Instruments/ati.xml">
    <name>Attitude Gyro</name>
    <x>563</x>
    <y>639</y>
@@ -126,7 +126,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>246</h>
   </instrument>
 
-  <instrument include="../../Instruments/turn-hi.xml">
+  <instrument include="../../Instruments/trn.xml">
    <name>Turn Coordinator</name>
    <x>305</x>
    <y>384</y>
