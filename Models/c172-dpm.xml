@@ -185,7 +185,7 @@
   <type>rotate</type>
   <object-name>Pedal.1</object-name>
   <object-name>Pedal.3</object-name>
-  <property>/controls/gear/wheel[0]/brake</property>
+  <property>/controls/gear/brake-left</property>
   <factor>-15</factor>
   <axis>
    <x>0.0</x>
@@ -216,7 +216,7 @@
   <type>rotate</type>
   <object-name>Pedal.2</object-name>
   <object-name>Pedal.4</object-name>
-  <property>/controls/gear/wheel[1]/brake</property>
+  <property>/controls/gear/brake-right</property>
   <factor>-15</factor>
   <axis>
    <x>0.0</x>
