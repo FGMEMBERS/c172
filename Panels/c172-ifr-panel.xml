@@ -158,7 +158,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- sacred six -->
 
-  <instrument include="../Instruments/asi.xml">
+  <instrument include="../Instruments/asi-160knot.xml">
    <name>Airspeed Indicator</name>
    <x>279</x>
    <y>645</y>
