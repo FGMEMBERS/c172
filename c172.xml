@@ -237,7 +237,7 @@
        </COEFFICIENT>
        <COEFFICIENT NAME="CLq" TYPE="VALUE">
          Lift_due_to_pitch_rate
-         FG_QBAR|FG_WINGAREA|FG_PITCHRATE|FG_CI2VEL
+         FG_QBAR|FG_WINGAREA|FG_AEROQ|FG_CI2VEL
          3.9
        </COEFFICIENT>
     </AXIS>
@@ -245,7 +245,7 @@
       <COEFFICIENT NAME="CDo" TYPE="VALUE">
          Drag_at_zero_lift
          FG_QBAR|FG_WINGAREA
-         0.036
+         0.042
       </COEFFICIENT>
        <COEFFICIENT NAME="CDDf" TYPE="VECTOR">
          Delta_drag_due_to_flap_deflection
@@ -253,9 +253,9 @@
          FG_FLAPS_POS
          FG_QBAR|FG_WINGAREA
          0   0
-         10  0.01
-         20  0.03
-         30  0.05
+         10  0.007
+         20  0.012
+         30  0.018
        </COEFFICIENT>
       <COEFFICIENT NAME="CDalpha" TYPE="TABLE">
          Drag_due_to_alpha
@@ -300,7 +300,7 @@
        <COEFFICIENT NAME="CDbeta" TYPE="VALUE">
          Drag_due_to_sideslip
          FG_QBAR|FG_WINGAREA|FG_ABETA
-         0.14
+         0.17
        </COEFFICIENT>
 
     </AXIS>
@@ -326,12 +326,12 @@
       </COEFFICIENT>
       <COEFFICIENT NAME="CYp" TYPE="VALUE">
          Side_force_due_to_roll_rate
-         FG_QBAR|FG_WINGAREA|FG_BI2VEL|FG_ROLLRATE
+         FG_QBAR|FG_WINGAREA|FG_BI2VEL|FG_AEROP
          -0.037
       </COEFFICIENT>
       <COEFFICIENT NAME="CYr" TYPE="VALUE">
          Side_force_due_to_yaw_rate
-         FG_QBAR|FG_WINGAREA|FG_BI2VEL|FG_YAWRATE
+         FG_QBAR|FG_WINGAREA|FG_BI2VEL|FG_AEROR
          0.21
       </COEFFICIENT>
     </AXIS>
@@ -350,13 +350,13 @@
 
        <COEFFICIENT NAME="Clp" TYPE="VALUE">
          Roll_moment_due_to_roll_rate_(roll_damping)
-         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_ROLLRATE
+         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_AEROP
          -0.47
        </COEFFICIENT>
 
        <COEFFICIENT NAME="Clr" TYPE="VALUE">
          Roll_moment_due_to_yaw_rate
-         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_YAWRATE
+         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_AEROR
          0.096
        </COEFFICIENT>
 
@@ -393,7 +393,7 @@
        </COEFFICIENT>
       <COEFFICIENT NAME="Cmq" TYPE="VALUE">
          Pitch_moment_due_to_pitch_rate
-         FG_QBAR|FG_WINGAREA|FG_CBAR|FG_CI2VEL|FG_PITCHRATE
+         FG_QBAR|FG_WINGAREA|FG_CBAR|FG_CI2VEL|FG_AEROQ
          -12.4
       </COEFFICIENT>
       <COEFFICIENT NAME="Cmadot" TYPE="VALUE">
@@ -423,13 +423,13 @@
        </COEFFICIENT>
        <COEFFICIENT NAME="Cnp" TYPE="VALUE">
          Yaw_moment_due_to_roll_rate
-         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_ROLLRATE
+         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_AEROP
          -0.03
         </COEFFICIENT>
 
        <COEFFICIENT NAME="Cnr" TYPE="VALUE">
          Yaw_moment_due_to_yaw_rate
-         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_YAWRATE
+         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_AEROR
          -0.099
        </COEFFICIENT>
 
