@@ -258,10 +258,10 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <params>
     <comm-freq-selected-prop>/radios/comm2/frequencies/selected</comm-freq-selected-prop>
     <comm-freq-standby-prop>/radios/comm2/frequencies/standby</comm-freq-standby-prop>
-    <nav-freq-selected-prop>/radios/nav2/frequencies/selected</nav-freq-selected-prop>
-    <nav-freq-standby-prop>/radios/nav2/frequencies/standby</nav-freq-standby-prop>
-    <nav-morse-id-volume-prop>/radios/nav2/volume</nav-morse-id-volume-prop>
-    <nav-morse-ident-toggle-prop>/radios/nav2/ident</nav-morse-ident-toggle-prop>
+    <nav-freq-selected-prop>/radios/nav[1]/frequencies/selected-mhz</nav-freq-selected-prop>
+    <nav-freq-standby-prop>/radios/nav[1]/frequencies/standby-mhz</nav-freq-standby-prop>
+    <nav-morse-id-volume-prop>/radios/nav[1]/volume</nav-morse-id-volume-prop>
+    <nav-morse-ident-toggle-prop>/radios/nav[1]/ident</nav-morse-ident-toggle-prop>
    </params>
    <x>880</x>
    <y>542</y>
