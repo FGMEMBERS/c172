@@ -36,7 +36,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <name>Cessna C172 Skyhawk Panel</name>
 
- <background>Aircraft/c172/Panels/Textures/shaped-bg.rgb</background>
+ <background>Aircraft/c172/Panels/Textures/panel-bg.rgb</background>
  <w>1024</w>
  <h>768</h>
  <y-offset>-305</y-offset>
@@ -153,12 +153,12 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- sacred six -->
 
-  <instrument include="../Instruments/airspeed.xml">
+  <instrument include="../Instruments/asi.xml">
    <name>Airspeed Indicator</name>
    <x>255</x>
    <y>645</y>
-   <w>120</w>
-   <h>120</h>
+   <w>128</w>
+   <h>128</h>
   </instrument>
 
   <instrument include="../Instruments/horizon.xml">
@@ -248,18 +248,26 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <y>651</y>
    </instrument>
       
-  <instrument include="../Instruments/navcom1-radio.xml">
+  <instrument include="../Instruments/navcom-radio.xml">
    <name>NavCom 1 Radio</name>
    <x>880</x>
    <y>607</y>
   </instrument>
 
-  <instrument include="../Instruments/navcom2-radio.xml">
+  <instrument include="../Instruments/navcom-radio.xml">
    <name>NavCom 2 Radio</name>
+   <params>
+    <comm-freq-selected-prop>/radios/comm2/frequencies/selected</comm-freq-selected-prop>
+    <comm-freq-standby-prop>/radios/comm2/frequencies/standby</comm-freq-standby-prop>
+    <nav-freq-selected-prop>/radios/nav2/frequencies/selected</nav-freq-selected-prop>
+    <nav-freq-standby-prop>/radios/nav2/frequencies/standby</nav-freq-standby-prop>
+    <nav-morse-id-volume-prop>/radios/nav2/volume</nav-morse-id-volume-prop>
+    <nav-morse-ident-toggle-prop>/radios/nav2/ident</nav-morse-ident-toggle-prop>
+   </params>
    <x>880</x>
    <y>542</y>
   </instrument>
-
+  
   <instrument include="../Instruments/adf-radio.xml">
    <name>ADF Radio</name>
    <x>880</x>
