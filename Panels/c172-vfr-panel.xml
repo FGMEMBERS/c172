@@ -34,7 +34,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <PropertyList>
 
- <name>Cessna C172 Skyhawk Panel</name>
+ <name>Cessna C172 Skyhawk VFR Panel</name>
  <background>Aircraft/c172/Panels/Textures/panel-bg.rgb</background>
  <w>1024</w>
  <h>768</h>
@@ -220,13 +220,22 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>120</h>
   </instrument>
 
-  <instrument include="../Instruments/nav2.xml">
+  <instrument include="../Instruments/nav1.xml">
    <name>VOR 2 Gauge</name>
+   <params>
+    <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag> -->
+    <nav-from-flag>/radios/nav[1]/from-flag</nav-from-flag> -->
+    <nav-radial-selected>/radios/nav[1]/radials/selected-deg</nav-radial-selected>
+    <nav-gs-needle-deflection>/radios/nav[1]/gs-needle-deflection</nav-gs-needle-deflection>
+    <nav-heading-needle-deflection>/radios/nav[1]/heading-needle-deflection</nav-heading-needle-deflection>
+    <nav-has-gs-needle>/sim/instrument-options/nav[1]/has-gs-needle</nav-has-gs-needle>
+   </params>
    <x>675</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
   </instrument>
+
 
   <instrument include="../Instruments/adf.xml">
    <name>ADF Gauge</name>

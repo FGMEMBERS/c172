@@ -34,7 +34,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <PropertyList>
 
- <name>Cessna C172 Skyhawk Panel</name>
+ <name>Cessna C172 Skyhawk IFR Panel</name>
  <background>Aircraft/c172/Panels/Textures/panel-bg.rgb</background>
  <w>1024</w>
  <h>768</h>
@@ -211,7 +211,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- radio nav instruments --> 
 
   <instrument include="../Instruments/nav1.xml">
-  <name>VOR 1 Gauge</name>
+  <name>VOR 2 Gauge</name>
   <params>
    <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag>
    <nav-from-flag>/radios/nav[1]/from-flag</nav-from-flag>
@@ -225,30 +225,6 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <h>120</h>
   </instrument>
 
-<!--
-  <instrument include="../Instruments/nav2.xml">
-   <name>VOR 2 Gauge</name>
-  <params>
-   <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag>
-   <nav-from-flag>/radios/nav[1]/from-flag</nav-from-flag>
-   <nav-radial-selected>/radios/nav[1]/radials/selected-deg</nav-radial-selected>
-   <nav-gs-needle-deflection>/radios/nav[1]/gs-needle-deflection</nav-gs-needle-deflection>
-   <nav-heading-needle-deflection>/radios/nav[1]/heading-needle-deflection</nav-heading-needle-deflection>
-  </params>
-   <x>685</x>
-   <y>512</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
-
-  <instrument include="../Instruments/adf.xml">
-   <name>ADF Gauge</name>
-   <x>685</x>
-   <y>379</y>
-   <w>120</w>
-   <h>120</h>
-  </instrument>
--->
 
 <!-- end radio nav instruments -->
 
@@ -260,13 +236,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <x>880</x>
    <y>671</y>
   </instrument>
-  
+
   <instrument include="../Instruments/markerbeacon.xml">
    <name>Marker Beacon Indicators</name>
    <x>786</x>
    <y>651</y>
    </instrument>
-      
+
   <instrument include="../Instruments/navcom-radio.xml">
    <name>NavCom 1 Radio</name>
    <x>880</x>
