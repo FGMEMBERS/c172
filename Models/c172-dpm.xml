@@ -4,16 +4,6 @@
 
  <path>c172-dpm.ac</path>
 
- <offsets>
-  <heading-deg>270</heading-deg>
-  <z-m>-1</z-m>
- </offsets>
-
- <!--
-   Note that the x and y axes are switched in the following, because
-   of the different model orientation.
- -->
-
  <animation>
   <type>spin</type>
   <object-name>Propeller</object-name>
@@ -21,12 +11,131 @@
   <center>
    <x-m>0</x-m>
    <y-m>0</y-m>
-   <z-m>.75</z-m>
+   <z-m>-.25</z-m>
+  </center>
+  <axis>
+   <x>1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftAileron</object-name>
+  <property>/controls/aileron</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.4</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.45</z-m>
+  </center>
+  <axis>
+   <x>0.15</x>
+   <y>1.0</y>
+   <z>0.01</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightAileron</object-name>
+  <property>/controls/aileron</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.4</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.45</z-m>
+  </center>
+  <axis>
+   <x>0.15</x>
+   <y>-1.0</y>
+   <z>0.01</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftFlap</object-name>
+  <property>/controls/flaps</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.1</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.45</z-m>
   </center>
   <axis>
    <x>0.0</x>
    <y>1.0</y>
    <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightFlap</object-name>
+  <property>/controls/flaps</property>
+  <factor>30</factor>
+  <center>
+   <x-m>1.1</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.45</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>LeftElevator</object-name>
+  <property>/controls/elevator</property>
+  <factor>-15</factor> <!-- check -->
+  <center>
+   <x-m>5.1</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.45</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>RightElevator</object-name>
+  <property>/controls/elevator</property>
+  <factor>-15</factor> <!-- check -->
+  <center>
+   <x-m>5.1</x-m>
+   <y-m>0.0</y-m>
+   <z-m>-0.45</z-m>
+  </center>
+  <axis>
+   <x>0.0</x>
+   <y>1.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Rudder</object-name>
+  <property>/controls/rudder</property>
+  <factor>18</factor>
+  <center>
+   <x-m>5.45</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.0</z-m>
+  </center>
+  <axis>
+   <x>0.72</x>
+   <y>0.0</y>
+   <z>1.0</z>
   </axis>
  </animation>
 
