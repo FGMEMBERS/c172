@@ -392,16 +392,19 @@
          -0.47
        </COEFFICIENT>
 
-       <COEFFICIENT NAME="Clr" TYPE="VALUE">
+       <COEFFICIENT NAME="Clr" TYPE="VECTOR">
          Roll_moment_due_to_yaw_rate
+         2
+         FG_ALPHA
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BI2VEL|FG_AEROR
-         0.18
+         0.000 0.08
+         0.094 0.19
        </COEFFICIENT>
 
        <COEFFICIENT NAME="Clda" TYPE="VALUE">
          Roll_moment_due_to_aileron
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_AILERON_POS
-         0.09
+         0.23
        </COEFFICIENT>
 
        <COEFFICIENT NAME="Cldr" TYPE="VALUE">
