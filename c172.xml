@@ -14,9 +14,13 @@
 
     <COMMENT>
     <!--
-    // Wing area
-    // Wing span
-    // Wing avg. chord
+    // Wing area (ft^2)
+    // Wing span (ft)
+    // Wing avg. chord (ft)
+    // H. Tail Area (ft^2)
+    // Wing MAC to H.Tail MAC (ft)
+    // V. Tail Area (ft^2)
+    // Wing MAC to V.Tail MAC (ft)
     // Ixx
     // Iyy
     // Izz
@@ -30,9 +34,13 @@
     -->
     </COMMENT>
 
-    AC_WINGAREA 174
-    AC_WINGSPAN 35.8
-    AC_CHORD    4.9
+    AC_WINGAREA  174
+    AC_WINGSPAN  35.8
+    AC_CHORD     4.9
+    AC_HTAILAREA 21.9
+    AC_HTAILARM  15.7
+    AC_VTAILAREA 16.5
+    AC_LV        15.7
     AC_IXX    948
     AC_IYY    1346
     AC_IZZ    1967
@@ -65,9 +73,9 @@
     -->
     </COMMENT>
 
-     AC_GEAR	NOSE        -6.8   0.0 -20.0  1800  600  0.01  0.6 0.02 STEERABLE NONE 20
-     AC_GEAR	LEFT_MAIN   58.2 -43.0 -17.9  5400 1600  0.01  0.6 0.02 CASTERED  LEFT  0
-     AC_GEAR	RIGHT_MAIN  58.2  43.0 -17.9  5400 1600  0.01  0.6 0.02 CASTERED  RIGHT 0
+     AC_GEAR	NOSE        -6.8   0.0 -20.0  1800  600  0.5  0.8 0.02 STEERABLE NONE 20
+     AC_GEAR	LEFT_MAIN   58.2 -43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  LEFT  0
+     AC_GEAR	RIGHT_MAIN  58.2  43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  RIGHT 0
      AC_GEAR	TAIL_SKID  188.0  0.0    8.0 20000 1000  0.2   0.2 0.2  FIXED NONE 0
      AC_GEAR	LEFT_TIP    43.2 -214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
      AC_GEAR	RIGHT_TIP   43.2  214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
@@ -101,7 +109,7 @@
     -->
     </COMMENT>
 
-    <AC_ENGINE FILE="eng_io320">
+    <AC_ENGINE FILE="engIO360C">
       XLOC   48.0
       YLOC    0.0
       ZLOC   59.4
@@ -327,6 +335,7 @@
          0.21
       </COEFFICIENT>
     </AXIS>
+
     <AXIS NAME="ROLL">
 
        <COEFFICIENT NAME="Clb" TYPE="VALUE">
@@ -356,7 +365,7 @@
        <COEFFICIENT NAME="Cldr" TYPE="VALUE">
          Roll_moment_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_RUDDER_POS
-         0.0147
+         -0.0147
         </COEFFICIENT>
 
       </AXIS>
@@ -481,7 +490,7 @@
   -->
   </COMMENT>
   <OUTPUT NAME="JSBout.csv" TYPE="NONE">
-    RATE_IN_HZ       20
+    RATE_IN_HZ       10
     SIMULATION       OFF
     ATMOSPHERE       OFF
     MASSPROPS        ON
