@@ -165,7 +165,7 @@
 
   <output>
     <name>NavCom 1 Power</name>
-    <prop>/systems/electrical/outputs/navcom[0]</prop>
+    <prop>/systems/electrical/outputs/nav[0]</prop>
   </output>
 
   <output>
@@ -182,7 +182,7 @@
 
   <output>
     <name>NavCom 2 Power</name>
-    <prop>/systems/electrical/outputs/navcom[1]</prop>
+    <prop>/systems/electrical/outputs/nav[1]</prop>
   </output>
 
   <output>
