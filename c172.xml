@@ -167,7 +167,7 @@
      </COMPONENT>
      <COMPONENT NAME="Left Aileron Control" TYPE="AEROSURFACE_SCALE">
        ID            3
-       INPUT         FG_AILERON_CMD
+       INPUT         2
        MIN          -20
        MAX           15
        GAIN          0.01745
@@ -190,7 +190,7 @@
      </COMPONENT>
      <COMPONENT NAME="Rudder Control" TYPE="AEROSURFACE_SCALE">
        ID            6
-       INPUT        FG_RUDDER_CMD
+       INPUT        5
        MIN         -16
        MAX          16
        GAIN         0.01745
