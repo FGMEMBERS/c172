@@ -167,9 +167,9 @@
    <name>stall</name>
    <mode>looped</mode>
    <path>Sounds/stall.wav</path>
-   <property>/sim/aero/alarms/stall-warning</property>
+   <property>/sim/alarms/stall-warning</property>
    <volume>
-    <property>/sim/aero/alarms/stall-warning</property>
+    <property>/sim/alarms/stall-warning</property>
     <max>1.0</max>
    </volume>
   </stall>
