@@ -42,12 +42,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <view-height>195</view-height>
 
  <instruments>
-
+<!--
   <instrument include="../../Instruments/num.xml">
    <name>numbertape</name>
    <x>768</x>
    <y>995</y>
   </instrument>
+  -->
 <!-- comical tail number -->
   <instrument include="../../Instruments/logo.xml">
    <name>Tail Number Plate</name>
