@@ -35,14 +35,17 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <name>Cessna C172 Skyhawk Panel</name>
 
  <background>Aircraft/c172/Panels/Textures/shaped-bg.rgb</background>
- <view-height>427</view-height>
+ <w>1024</w>
+ <h>768</h>
+ <y-offset>-305</y-offset>
+ <view-height>172</view-height>
 
  <instruments>
 <!-- comical tail number -->
   <tail_number>
    <path>Aircraft/c172/Instruments/logo.xml</path>
    <x>390</x>
-   <y>423</y>
+   <y>735</y>
    <w>72</w>
    <h>32</h>
   </tail_number>
@@ -51,7 +54,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <clock>
    <path>Aircraft/c172/Instruments/clock.xml</path>
    <x>150</x>
-   <y>345</y>
+   <y>645</y>
    <w>72</w>
    <h>72</h>
   </clock>
@@ -59,7 +62,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <egt>
    <path>Aircraft/c172/Instruments/egt.xml</path>
    <x>150</x>
-   <y>268</y>
+   <y>568</y>
    <w>72</w>
    <h>72</h>
   </egt>
@@ -67,7 +70,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <fuel>
    <path>Aircraft/c172/Instruments/fuel.xml</path>
    <x>75</x>
-   <y>268</y>
+   <y>568</y>
    <w>72</w>
    <h>72</h>
   </fuel>
@@ -75,7 +78,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <oil>
    <path>Aircraft/c172/Instruments/oil.xml</path>
    <x>75</x>
-   <y>188</y>
+   <y>488</y>
    <w>72</w>
    <h>72</h>
   </oil>
@@ -83,7 +86,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <vacamp>
    <path>Aircraft/c172/Instruments/vacamp.xml</path>
    <x>150</x>
-   <y>188</y>
+   <y>488</y>
    <w>72</w>
    <h>72</h>
   </vacamp>
@@ -91,7 +94,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <manifold_pressure>
    <path>Aircraft/c172/Instruments/manifold-press.xml</path>
    <x>255</x>
-   <y>79</y>
+   <y>379</y>
    <w>120</w>
    <h>120</h>
   </manifold_pressure>
@@ -102,7 +105,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <rpm>
    <path>Aircraft/c172/Instruments/rpm.xml</path>
    <x>520</x>
-   <y>79</y>
+   <y>379</y>
    <w>120</w>
    <h>120</h>
   </rpm>
@@ -110,13 +113,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <throttle>
    <path>Aircraft/c172/Instruments/throttle-knob.xml</path>
    <x>785</x>
-   <y>60</y>
+   <y>360</y>
   </throttle>
 
   <mixture>
    <path>Aircraft/c172/Instruments/mixture-knob.xml</path>
    <x>865</x>
-   <y>60</y>
+   <y>360</y>
   </mixture>
   
 <!--  end engine controls cluster -->
@@ -126,19 +129,19 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <flaps>
    <path>Aircraft/c172/Instruments/flap.xml</path>
    <x>950</x>
-   <y>65</y>
+   <y>365</y>
   </flaps>
 
   <brake>
    <path>Aircraft/c172/Instruments/brakes.xml</path>
    <x>390</x>
-   <y>130</y>
+   <y>430</y>
   </brake>
 
   <controls>
    <path>Aircraft/c172/Instruments/controls.xml</path>
    <x>390</x>
-   <y>70</y>
+   <y>370</y>
    <w>90</w>
    <h>90</h>
   </controls>
@@ -150,7 +153,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <airspeed>
    <path>Aircraft/c172/Instruments/airspeed.xml</path>
    <x>255</x>
-   <y>345</y>
+   <y>645</y>
    <w>120</w>
    <h>120</h>
   </airspeed>
@@ -158,7 +161,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <horizon>
    <path>Aircraft/c172/Instruments/horizon.xml</path>
    <x>390</x>
-   <y>345</y>
+   <y>645</y>
    <w>120</w>
    <h>120</h>
   </horizon>
@@ -166,7 +169,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <altimeter>
    <path>Aircraft/c172/Instruments/altimeter.xml</path>
    <x>520</x>
-   <y>345</y>
+   <y>645</y>
    <w>120</w>
    <h>120</h>
   </altimeter>
@@ -174,7 +177,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <turn>
    <path>Aircraft/c172/Instruments/turn.xml</path>
    <x>255</x>
-   <y>212</y>
+   <y>512</y>
    <w>120</w>
    <h>120</h>
   </turn>
@@ -182,7 +185,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <gyro>
    <path>Aircraft/c172/Instruments/gyro.xml</path>
    <x>390</x>
-   <y>212</y>
+   <y>512</y>
    <w>120</w>
    <h>120</h>
   </gyro>
@@ -190,7 +193,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <vertical>
    <path>Aircraft/c172/Instruments/vertical.xml</path>
    <x>520</x>
-   <y>212</y>
+   <y>512</y>
    <w>120</w>
    <h>120</h>
   </vertical>
@@ -204,7 +207,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <nav1>
    <path>Aircraft/c172/Instruments/nav1.xml</path>
    <x>665</x>
-   <y>345</y>
+   <y>645</y>
    <w>120</w>
    <h>120</h>
   </nav1>
@@ -212,7 +215,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <nav2>
    <path>Aircraft/c172/Instruments/nav2.xml</path>
    <x>665</x>
-   <y>212</y>
+   <y>512</y>
    <w>120</w>
    <h>120</h>
   </nav2>
@@ -220,7 +223,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <adf>
    <path>Aircraft/c172/Instruments/adf.xml</path>
    <x>665</x>
-   <y>79</y>
+   <y>379</y>
    <w>120</w>
    <h>120</h>
   </adf>
@@ -233,37 +236,37 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <dme>
    <path>Aircraft/c172/Instruments/dme.xml</path>
    <x>880</x>
-   <y>371</y>
+   <y>671</y>
   </dme>
   
   <markerbeacon>
    <path>Aircraft/c172/Instruments/markerbeacon.xml</path>
    <x>786</x>
-   <y>351</y>
+   <y>651</y>
    </markerbeacon>
       
   <navcom1-radio>
    <path>Aircraft/c172/Instruments/navcom1-radio.xml</path>
    <x>880</x>
-   <y>307</y>
+   <y>607</y>
   </navcom1-radio>
 
   <navcom2-radio>
    <path>Aircraft/c172/Instruments/navcom2-radio.xml</path>
    <x>880</x>
-   <y>242</y>
+   <y>542</y>
   </navcom2-radio>
 
   <adf-radio>
    <path>Aircraft/c172/Instruments/adf-radio.xml</path>
    <x>880</x>
-   <y>179</y>
+   <y>479</y>
   </adf-radio>
 
   <autopilot>
    <path>Aircraft/c172/Instruments/autopilot.xml</path>
    <x>880</x>
-   <y>131</y>
+   <y>431</y>
   </autopilot>
 
 <!-- end radio stack -->
@@ -271,7 +274,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <magcompass>
    <path>Aircraft/c172/Instruments/magcompass.xml</path>
    <x>768</x>
-   <y>459</y>
+   <y>782</y>
   </magcompass>
  </instruments>
 
