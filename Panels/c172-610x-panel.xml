@@ -42,9 +42,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <instruments>
 
- <!-- place holder for OAT -->
- <instrument include="../../Instruments/navcom-radio.xml">
-   <name>OAT Placeholder</name>
+ <!-- Outside air tempurature -->
+ <instrument include="../../Instruments/oat.xml">
+   <name>OAT</name>
    <x>86</x>
    <y>705</y>
    <w>75</w>
@@ -52,12 +52,12 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   </instrument>
 
  <!-- place holder for Annunciators -->
- <instrument include="../../Instruments/navcom-radio.xml">
-   <name>Annunciators Placeholder</name>
+ <instrument include="../../Instruments/ann-c172s.xml">
+   <name>Annunciator</name>
    <x>569</x>
    <y>751</y>
-   <w>220</w>
-   <h>27</h>
+   <w>225</w>
+   <h>32</h>
   </instrument>
 
  <!-- engine guage cluster -->  
