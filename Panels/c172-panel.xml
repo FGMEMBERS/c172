@@ -165,8 +165,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <name>Attitude Gyro</name>
    <x>390</x>
    <y>645</y>
-   <w>120</w>
-   <h>120</h>
+   <w>128</w>
+   <h>128</h>
   </instrument>
 
   <instrument include="../Instruments/altimeter.xml">
