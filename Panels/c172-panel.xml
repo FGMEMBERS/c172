@@ -126,7 +126,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <flaps>
    <path>Aircraft/c172/Instruments/flap.xml</path>
    <x>950</x>
-   <y>75</y>
+   <y>65</y>
   </flaps>
 
   <brake>
