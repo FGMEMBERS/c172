@@ -46,42 +46,42 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../../Instruments/fuel-c172s.xml">
    <name>Fuel Gauge</name>
-   <x>95</x>
-   <y>613</y>
-   <w>154</w>
-   <h>154</h>
+   <x>87</x>
+   <y>595</y>
+   <w>165</w>
+   <h>165</h>
   </instrument>
 
   <instrument include="../../Instruments/egt-ff-c172s.xml">
    <name>Exhaust Gas Temperature Gauge</name>
-   <x>95</x>
-   <y>439</y>
-   <w>154</w>
-   <h>154</h>
+   <x>89</x>
+   <y>422</y>
+   <w>165</w>
+   <h>165</h>
   </instrument>
 
 
   <instrument include="../../Instruments/oil-c172s.xml">
    <name>Oil Gauge</name>
-   <x>95</x>
-   <y>265</y>
-   <w>154</w>
-   <h>154</h>
+   <x>87</x>
+   <y>249</y>
+   <w>165</w>
+   <h>165</h>
   </instrument>
   
   <instrument include="../../Instruments/vac-amp-c172s.xml">
    <name>Vacuum Pressure Gauge</name>
-   <x>95</x>
-   <y>93</y>
-   <w>154</w>
-   <h>154</h>
+   <x>88</x>
+   <y>75</y>
+   <w>165</w>
+   <h>165</h>
   </instrument>
 
 
   <instrument include="../../Instruments/adf-c172s.xml">
    <name>ADF Gauge</name>
    <x>305</x>
-   <y>130</y>
+   <y>110</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -92,8 +92,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  
   <instrument include="../../Instruments/rpm-c172s.xml">
    <name>RPM Gauge</name>
-   <x>827</x>
-   <y>130</y>
+   <x>838</x>
+   <y>113</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -105,31 +105,31 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/asi-c172s.xml">
    <name>Airspeed Indicator</name>
    <x>305</x>
-   <y>639</y>
+   <y>605</y>
    <w>246</w>
    <h>246</h>
   </instrument>
 
   <instrument include="../../Instruments/ati-c172s.xml">
    <name>Attitude Gyro</name>
-   <x>563</x>
-   <y>639</y>
+   <x>570</x>
+   <y>605</y>
    <w>246</w>
    <h>246</h>
   </instrument>
 
   <instrument include="../../Instruments/alt-c172s.xml">
    <name>Altimeter</name>
-   <x>827</x>
-   <y>639</y>
+   <x>838</x>
+   <y>606</y>
    <w>246</w>
    <h>246</h>
   </instrument>
 
   <instrument include="../../Instruments/trn-c172s.xml">
    <name>Turn Coordinator</name>
-   <x>305</x>
-   <y>384</y>
+   <x>304</x>
+   <y>360</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -138,16 +138,20 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <!--  <name>Directional Gyro</name> -->
   <instrument include="../../Instruments/hsi-bk-hi.xml">
    <name>Bendix King HSI</name>
-   <x>563</x>
-   <y>384</y>
-   <w>246</w>
-   <h>246</h>
+   <!-- <x>563</x> -->
+   <!-- <y>384</y> -->
+   <!-- <w>246</w> -->
+   <!-- <h>246</h> -->
+   <x>572</x>
+   <y>362</y>
+   <w>226</w>
+   <h>226</h>
   </instrument>
 
   <instrument include="../../Instruments/vsi-c172s.xml">
    <name>Vertical Velocity Indicator</name>
-   <x>827</x>
-   <y>384</y>
+   <x>837</x>
+   <y>361</y>
    <w>246</w>
    <h>246</h>
   </instrument>
@@ -167,8 +171,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <nav-has-gs-needle>/sim/instrument-options/nav[1]/has-gs-needle</nav-has-gs-needle>
     <nav-needles-pivot>/sim/instrument-options/nav[1]/needles-pivot</nav-needles-pivot>
   </params>
-  <x>563</x>
-  <y>130</y>
+  <x>572</x>
+  <y>113</y>
   <w>246</w>
   <h>246</h>
   </instrument>
