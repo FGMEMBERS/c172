@@ -273,6 +273,14 @@ override those by providing <w>Aircraft</w> and <h>..</h> properties.
    <h>65</h>
   </instrument>
 
+  <instrument include="../../Instruments/xpdr-kt76c.xml">
+   <name>Bendix/King KT 76C Class 1A Transponder</name>
+   <x>747</x>
+   <y>860</y>
+   <w>191</w>
+   <h>47</h>
+  </instrument>
+
   <!-- MISSING: transponder -->
 
   <instrument include="../../Instruments/autopilot.xml">
@@ -280,7 +288,7 @@ override those by providing <w>Aircraft</w> and <h>..</h> properties.
    <x>747</x>
    <y>810</y>
    <w>191</w>
-   <h>55</h>
+   <h>54</h>
   </instrument>
 
 
