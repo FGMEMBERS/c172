@@ -23,58 +23,42 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftAileron</object-name>
-  <property>/controls/aileron</property>
-  <factor>30</factor>
+  <property>/surface-positions/left-aileron-pos-norm</property>
+  <factor>-30</factor>
   <center>
    <x-m>1.4</x-m>
    <y-m>0.0</y-m>
-   <z-m>0.45</z-m>
+   <z-m>0.3</z-m>
   </center>
   <axis>
    <x>0.15</x>
    <y>1.0</y>
-   <z>0.01</z>
+   <z>-0.03</z>
   </axis>
  </animation>
 
  <animation>
   <type>rotate</type>
   <object-name>RightAileron</object-name>
-  <property>/controls/aileron</property>
+  <property>/surface-positions/right-aileron-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>1.4</x-m>
    <y-m>0.0</y-m>
-   <z-m>0.45</z-m>
+   <z-m>0.3</z-m>
   </center>
   <axis>
    <x>0.15</x>
    <y>-1.0</y>
-   <z>0.01</z>
+   <z>-0.03</z>
   </axis>
  </animation>
 
  <animation>
   <type>rotate</type>
   <object-name>LeftFlap</object-name>
-  <property>/controls/flaps</property>
-  <factor>30</factor>
-  <center>
-   <x-m>1.1</x-m>
-   <y-m>0.0</y-m>
-   <z-m>0.45</z-m>
-  </center>
-  <axis>
-   <x>0.0</x>
-   <y>1.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
-
- <animation>
-  <type>rotate</type>
   <object-name>RightFlap</object-name>
-  <property>/controls/flaps</property>
+  <property>/surface-positions/flap-pos-norm</property>
   <factor>30</factor>
   <center>
    <x-m>1.1</x-m>
@@ -91,24 +75,8 @@
  <animation>
   <type>rotate</type>
   <object-name>LeftElevator</object-name>
-  <property>/controls/elevator</property>
-  <factor>15</factor> <!-- check -->
-  <center>
-   <x-m>5.1</x-m>
-   <y-m>0.0</y-m>
-   <z-m>-0.45</z-m>
-  </center>
-  <axis>
-   <x>0.0</x>
-   <y>1.0</y>
-   <z>0.0</z>
-  </axis>
- </animation>
-
- <animation>
-  <type>rotate</type>
   <object-name>RightElevator</object-name>
-  <property>/controls/elevator</property>
+  <property>/surface-positions/elevator-pos-norm</property>
   <factor>15</factor> <!-- check -->
   <center>
    <x-m>5.1</x-m>
@@ -125,8 +93,8 @@
  <animation>
   <type>rotate</type>
   <object-name>Rudder</object-name>
-  <property>/controls/rudder</property>
-  <factor>18</factor>
+  <property>/surface-positions/rudder-pos-norm</property>
+  <factor>-18</factor>
   <center>
    <x-m>5.45</x-m>
    <y-m>0.0</y-m>
