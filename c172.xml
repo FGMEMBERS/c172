@@ -495,7 +495,7 @@
   <OUTPUT NAME="JSBout172.csv" TYPE="CSV">
     RATE_IN_HZ       10
     SIMULATION       OFF
-    ATMOSPHERE       OFF
+    ATMOSPHERE       ON
     MASSPROPS        ON
     AEROSURFACES     ON
     RATES            ON
