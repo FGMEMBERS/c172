@@ -217,7 +217,7 @@
   <type>rotate</type>
   <object-name>NoseWheel</object-name>
   <property>/surface-positions/rudder-pos-norm</property>
-  <factor>20</factor>
+  <factor>-20</factor>
   <center>
    <x-m>-0.8</x-m>
    <y-m>0.0</y-m>
@@ -360,7 +360,7 @@
   <type>rotate</type>
   <object-name>Rudder</object-name>
   <property>/surface-positions/rudder-pos-norm</property>
-  <factor>-17.5</factor>
+  <factor>17.5</factor>
   <center>
    <x-m>5.45</x-m>
    <y-m>0.0</y-m>
