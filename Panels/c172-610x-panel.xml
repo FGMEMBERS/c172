@@ -90,7 +90,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- engine controls cluster -->  
  
-  <instrument include="../../Instruments/rpm-hi.xml">
+  <instrument include="../../Instruments/rpm.xml">
    <name>RPM Gauge</name>
    <x>827</x>
    <y>130</y>
@@ -134,7 +134,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>246</h>
   </instrument>
 
-  <instrument include="../../Instruments/hsi-hi.xml">
+  <!-- <instrument include="../../Instruments/hsi-hi.xml"> -->
+  <instrument include="../../Instruments/hdg.xml">
    <name>Directional Gyro</name>
    <x>563</x>
    <y>384</y>
@@ -142,7 +143,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <h>246</h>
   </instrument>
 
-  <instrument include="../../Instruments/vertical-hi.xml">
+  <instrument include="../../Instruments/vsi.xml">
    <name>Vertical Velocity Indicator</name>
    <x>827</x>
    <y>384</y>
