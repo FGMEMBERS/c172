@@ -62,9 +62,9 @@
    </volume>
    <pitch>
     <property>/engines/engine/rpm</property>
-    <factor>0.0012</factor>
-    <min>1.0</min>
-    <max>5.0</max>
+    <factor>0.0004</factor>
+    <min>0.5</min>
+    <max>2.0</max>
     <offset>0.15</offset>
    </pitch>
   </engine>
@@ -82,7 +82,7 @@
    </volume>
    <pitch>
     <property>/engines/engine/mp-osi</property>
-    <factor>0.005</factor>
+    <factor>0.0036</factor>
     <min>0.5</min>
     <max>2.0</max>
     <offset>0.9</offset>
@@ -190,7 +190,7 @@
    </volume>
    <pitch>
     <property>/velocities/airspeed-kt</property>
-    <factor>0.01</factor>
+    <factor>0.0035</factor>
     <offset>1.25</offset>
    </pitch>
   </wind>
