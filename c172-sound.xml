@@ -49,14 +49,46 @@
     <max>0.5</max>
     <offset>0.15</offset>
    </volume>
+   <volume>
+    <property>/orientation/alpha-deg</property>
+    <type>log</type>
+    <min>1.0</min>
+    <max>1.5</max>
+   </volume>
+   <volume>
+    <property>/sim/current-view/internal</property>
+    <offset>1.0</offset>
+    <factor>-0.4</factor>
+   </volume>
    <pitch>
     <property>/engines/engine/rpm</property>
     <factor>0.0012</factor>
     <min>1.0</min>
     <max>5.0</max>
-    <offset>0.3</offset>
+    <offset>0.15</offset>
    </pitch>
   </engine>
+
+  <propeller>
+   <name>propeller</name>
+   <mode>looped</mode>
+   <path>Sounds/turboprop1.wav</path>
+   <property>/engines/engine/running</property>
+   <volume>
+    <property>/orientation/alpha-deg</property>
+    <type>log</type>
+    <factor>0.7</factor>
+    <min>0.2</min>
+    <max>1.3</max>
+   </volume>
+   <pitch>
+    <property>/engines/engine/mp-osi</property>
+    <factor>0.005</factor>
+    <min>0.5</min>
+    <max>2.0</max>
+    <offset>0.9</offset>
+   </pitch>
+  </propeller>
 
   <rumble>
    <name>rumble</name>
@@ -68,6 +100,7 @@
      <property>/gear/gear[1]/wow</property>
      <property>/gear/gear[2]/wow</property>
     </or>
+    <property>/sim/current-view/internal</property>
    </condition>
    <volume>
     <property>/velocities/airspeed-kt</property>
@@ -167,7 +200,10 @@
    <name>stall</name>
    <mode>looped</mode>
    <path>Sounds/stall.wav</path>
-   <property>/sim/alarms/stall-warning</property>
+   <condition>
+    <property>/sim/alarms/stall-warning</property>
+    <property>/sim/current-view/internal</property>
+   </condition>
    <volume>
     <property>/sim/alarms/stall-warning</property>
     <max>1.0</max>
