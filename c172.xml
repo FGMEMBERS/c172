@@ -113,7 +113,7 @@
       FEED      0
     </AC_ENGINE>
 
-    <AC_THRUSTER FILE="prop_generic2f">
+    <AC_THRUSTER FILE="prop_75in2f">
       XLOC  -37.7
       YLOC    0.0
       ZLOC   26.6
@@ -325,10 +325,14 @@
          FG_QBAR|FG_WINGAREA
          -0.001284
        </COEFFICIENT>
-       <COEFFICIENT NAME="CYb" TYPE="VALUE">
+       <COEFFICIENT NAME="CYb" TYPE="VECTOR">
          Side_force_due_to_beta
-         FG_QBAR|FG_WINGAREA|FG_BETA
-         -0.31
+         3
+         FG_BETA
+         FG_QBAR|FG_WINGAREA
+          0.349  -0.108
+          0       0
+         -0.349   0.108
        </COEFFICIENT>
 
        <COEFFICIENT NAME="CYda" TYPE="VALUE">
@@ -444,10 +448,14 @@
          0.000563
        </COEFFICIENT>
 
-       <COEFFICIENT NAME="Cnb" TYPE="VALUE">
+       <COEFFICIENT NAME="Cnb" TYPE="VECTOR">
          Yaw_moment_due_to_beta
-         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BETA
-         0.065
+         3
+         FG_BETA
+         FG_QBAR|FG_WINGAREA|FG_WINGSPAN
+          0.349  0.0227
+          0      0
+         -0.349 -0.0227
        </COEFFICIENT>
        <COEFFICIENT NAME="Cnp" TYPE="VALUE">
          Yaw_moment_due_to_roll_rate
