@@ -36,13 +36,22 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
  <background>Aircraft/c172/Panels/Textures/shaped-bg.rgb</background>
  <view-height>427</view-height>
-
+ <!--h>500</h-->
  <instruments>
+<!-- comical tail number -->
+  <tail_number>
+   <path>Aircraft/c172/Instruments/logo.xml</path>
+   <x>390</x>
+   <y>423</y>
+   <w>72</w>
+   <h>32</h>
+  </tail_number>
+
 <!-- engine guage cluster --> 
   <clock>
    <path>Aircraft/c172/Instruments/clock.xml</path>
    <x>150</x>
-   <y>320</y>
+   <y>345</y>
    <w>72</w>
    <h>72</h>
   </clock>
@@ -50,7 +59,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <egt>
    <path>Aircraft/c172/Instruments/egt.xml</path>
    <x>150</x>
-   <y>238</y>
+   <y>268</y>
    <w>72</w>
    <h>72</h>
   </egt>
@@ -58,11 +67,34 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <fuel>
    <path>Aircraft/c172/Instruments/fuel.xml</path>
    <x>75</x>
-   <y>238</y>
+   <y>268</y>
    <w>72</w>
    <h>72</h>
   </fuel>
 
+  <oil>
+   <path>Aircraft/c172/Instruments/oil.xml</path>
+   <x>75</x>
+   <y>188</y>
+   <w>72</w>
+   <h>72</h>
+  </oil>
+  
+  <vacamp>
+   <path>Aircraft/c172/Instruments/vacamp.xml</path>
+   <x>150</x>
+   <y>188</y>
+   <w>72</w>
+   <h>72</h>
+  </vacamp>
+
+  <manifold_pressure>
+   <path>Aircraft/c172/Instruments/manifold-press.xml</path>
+   <x>255</x>
+   <y>79</y>
+   <w>120</w>
+   <h>120</h>
+  </manifold_pressure>
 <!-- end engine guages cluster -->
 
 <!-- engine controls cluster --> 
@@ -77,13 +109,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <throttle>
    <path>Aircraft/c172/Instruments/throttle-knob.xml</path>
-   <x>865</x>
+   <x>785</x>
    <y>60</y>
   </throttle>
 
   <mixture>
    <path>Aircraft/c172/Instruments/mixture-knob.xml</path>
-   <x>950</x>
+   <x>865</x>
    <y>60</y>
   </mixture>
   
@@ -93,7 +125,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <flaps>
    <path>Aircraft/c172/Instruments/flap.xml</path>
-   <x>785</x>
+   <x>950</x>
    <y>75</y>
   </flaps>
 
