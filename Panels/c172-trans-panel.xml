@@ -38,6 +38,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <background>Aircraft/c172/Panels/Textures/transparent-bg.rgb</background>
  <w>1424</w>
  <h>440</h>
+ <view-height>768</view-height>
 
  <instruments>
 <!-- comical tail number -->
@@ -287,4 +288,5 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 </PropertyList>
+
 
