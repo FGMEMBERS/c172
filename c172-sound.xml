@@ -203,7 +203,7 @@
    <path>Sounds/stall.wav</path>
    <condition>
     <property>/sim/alarms/stall-warning</property>
-    <property>/sim/current-view/internal</property>
+    <!-- <property>/sim/current-view/internal</property> -->
    </condition>
    <volume>
     <property>/sim/alarms/stall-warning</property>
