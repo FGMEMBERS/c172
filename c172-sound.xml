@@ -99,7 +99,7 @@
      <property>/gear/gear[1]/wow</property>
      <property>/gear/gear[2]/wow</property>
     </or>
-    <property>/sim/current-view/internal</property>
+    <!-- <property>/sim/current-view/internal</property> -->
    </condition>
    <volume>
     <property>/velocities/airspeed-kt</property>
