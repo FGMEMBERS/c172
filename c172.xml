@@ -166,7 +166,6 @@
        ID            2
        INPUT         FG_AILERON_CMD
        INPUT         FG_ROLL_TRIM_CMD
-       INPUT         AP_AILERON_CMD
        CLIPTO        -1 1
      </COMPONENT>
      <COMPONENT NAME="Left Aileron Control" TYPE="AEROSURFACE_SCALE">
