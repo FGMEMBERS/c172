@@ -371,7 +371,7 @@
       <COEFFICIENT NAME="Cmalpha" TYPE="VALUE">
         Pitch_moment_due_to_alpha
         FG_QBAR|FG_WINGAREA|FG_CBAR|FG_ALPHA
-        -0.9
+        -1.8
       </COEFFICIENT>
       <COEFFICIENT NAME="CmDf" TYPE="VECTOR">
          Delta_pitching_moment_due_to_flap_deflection
