@@ -172,6 +172,7 @@
     <input>Virtual Bus 1</input>
     <output>Starter 1 Power</output>
     <switch>/controls/starter[0]</switch>
+    <initial-state>off</initial-state>
   </connector>
 
   <!-- connect bus 1 & 2 -->
