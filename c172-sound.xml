@@ -57,7 +57,7 @@
    <volume>
     <property>/sim/current-view/internal</property>
     <offset>1.0</offset>
-    <factor>-0.4</factor>
+    <factor>-0.7</factor>
    </volume>
    <pitch>
     <property>/engines/engine/rpm</property>
@@ -78,6 +78,10 @@
     <type>log</type>
     <min>0.2</min>
     <max>1.0</max>
+   </volume>
+   <volume>
+    <property>/sim/current-view/internal</property>
+    <factor>0.5</factor>
    </volume>
    <pitch>
     <property>/engines/engine/mp-osi</property>
