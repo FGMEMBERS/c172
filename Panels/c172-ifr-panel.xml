@@ -196,7 +196,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <y>512</y>
    <w>120</w>
    <h>120</h>
-  </instrument>
+0  </instrument>
 
   <instrument include="../Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
@@ -210,22 +210,23 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 
 
-<!-- radio nav instruments  -->
+<!-- radio nav instruments --> 
 
   <instrument include="../Instruments/nav1.xml">
-   <name>VOR 1 Gauge</name>
+  <name>VOR 1 Gauge</name>
   <params>
-   <nav-radial-selected-deg>/radios/nav[1]/radials/selected-deg</nav-radial-selected-deg>
    <nav-to-flag>/radios/nav[1]/to-flag</nav-to-flag>
    <nav-from-flag>/radios/nav[1]/from-flag</nav-from-flag>
-   <nav-heading-needle-deflection>/radios/nav[1]/heading-needle-deflection</nav-heading-needle-deflection>
+   <nav-radial-selected>/radios/nav[1]/radials/selected-deg</nav-radial-selected>
    <nav-gs-needle-deflection>/radios/nav[1]/gs-needle-deflection</nav-gs-needle-deflection>
+   <nav-heading-needle-deflection>/radios/nav[1]/heading-needle-deflection</nav-heading-needle-deflection>
   </params>
-   <x>675</x>
-   <y>645</y>
-   <w>120</w>
-   <h>120</h>
+  <x>675</x>
+  <y>645</y>
+  <w>120</w>
+  <h>120</h>
   </instrument>
+
 <!--
   <instrument include="../Instruments/nav2.xml">
    <name>VOR 2 Gauge</name>
