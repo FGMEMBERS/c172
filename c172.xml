@@ -1,4 +1,4 @@
-<FDM_CONFIG NAME="c172" VERSION="1.56">
+<FDM_CONFIG NAME="c172" VERSION="1.57">
 <!--
 
   File:        c172.xml
@@ -68,12 +68,12 @@
     <max steer angle>                Maximum steerable angle in degrees
     -->
 
-     AC_GEAR  NOSE        -6.8   0.0 -20.0  1800  600  0.5  0.8 0.02 STEERABLE NONE 20
-     AC_GEAR  LEFT_MAIN   58.2 -43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  LEFT  0
-     AC_GEAR  RIGHT_MAIN  58.2  43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  RIGHT 0
-     AC_GEAR  TAIL_SKID  188.0  0.0    8.0 20000 1000  0.2   0.2 0.2  FIXED NONE 0
-     AC_GEAR  LEFT_TIP    43.2 -214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
-     AC_GEAR  RIGHT_TIP   43.2  214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
+     AC_GEAR  NOSE        -6.8   0.0 -20.0  1800  600  0.5  0.8 0.02 STEERABLE NONE 20 FIXED
+     AC_GEAR  LEFT_MAIN   58.2 -43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  LEFT  0 FIXED
+     AC_GEAR  RIGHT_MAIN  58.2  43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  RIGHT 0 FIXED
+     AC_GEAR  TAIL_SKID  188.0  0.0    8.0 20000 1000  0.2   0.2 0.2  FIXED NONE 0 FIXED
+     AC_GEAR  LEFT_TIP    43.2 -214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0 FIXED
+     AC_GEAR  RIGHT_TIP   43.2  214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0 FIXED
 
 </UNDERCARRIAGE>
 
@@ -117,7 +117,7 @@
       ZLOC   26.6
       PITCH   0.0
       YAW     0.0
-      P_FACTOR 1.0
+      P_FACTOR 0.1
       SENSE   1.0
     </AC_THRUSTER>
 
@@ -163,7 +163,7 @@
        GAIN         0.01745
        OUTPUT       FG_RUDDER_POS
      </COMPONENT>
-     <COMPONENT NAME="Flaps Control" TYPE="FLAPS">
+     <COMPONENT NAME="Flaps Control" TYPE="KINEMAT">
        ID           4
        INPUT        FG_FLAPS_CMD
        DETENTS      4
@@ -491,7 +491,7 @@
 
     NOTE that Time is always output with the data.
   -->
-  <OUTPUT NAME="JSBout.csv" TYPE="CSV">
+  <OUTPUT NAME="JSBout.csv" TYPE="NONE">
     RATE_IN_HZ       10
     SIMULATION       OFF
     ATMOSPHERE       OFF
