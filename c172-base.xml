@@ -10,6 +10,9 @@ Common configuration for all C172 aircraft.
  <sim>
 
   <systems>
+    <autopilot>
+      <path>Aircraft/Generic/generic-autopilot.xml</path>
+    </autopilot>
     <electrical>
       <path>Aircraft/c172/c172-electrical.xml</path>
     </electrical>
