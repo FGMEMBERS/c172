@@ -249,7 +249,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/magcompass.xml">
    <name>Magnetic Compass</name>
    <x>720</x>
-   <y>405</y>
+   <y>375</y>
    <w>85</w>
    <h>50</h>
   </instrument>

@@ -212,7 +212,7 @@
   <type>rotate</type>
   <object-name>NoseWheel</object-name>
   <property>/surface-positions/rudder-pos-norm</property>
-  <factor>35</factor>
+  <factor>20</factor>
   <center>
    <x-m>-0.8</x-m>
    <y-m>0.0</y-m>
@@ -246,7 +246,20 @@
   <type>rotate</type>
   <object-name>LeftAileron</object-name>
   <property>/surface-positions/left-aileron-pos-norm</property>
-  <factor>-30</factor>
+  <interpolation>
+   <entry>
+    <ind>-1.0</ind>
+    <dep>15</dep>
+   </entry>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>-20</dep>
+   </entry>
+  </interpolation>
   <center>
    <x-m>0.94</x-m>
    <y-m>-3.83</y-m>
@@ -263,7 +276,20 @@
   <type>rotate</type>
   <object-name>RightAileron</object-name>
   <property>/surface-positions/right-aileron-pos-norm</property>
-  <factor>30</factor>
+  <interpolation>
+   <entry>
+    <ind>-1.0</ind>
+    <dep>-20</dep>
+   </entry>
+   <entry>
+    <ind>0.0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>15</dep>
+   </entry>
+  </interpolation>
   <center>
    <x-m>0.94</x-m>
    <y-m>3.83</y-m>
@@ -299,7 +325,20 @@
   <object-name>LeftElevator</object-name>
   <object-name>RightElevator</object-name>
   <property>/surface-positions/elevator-pos-norm</property>
-  <factor>15</factor> <!-- check -->
+  <interpolation>
+   <entry>
+    <ind>-1.0</ind>
+    <dep>-28</dep>
+   </entry>
+   <entry>
+    <ind>0</ind>
+    <dep>0</dep>
+   </entry>
+   <entry>
+    <ind>1.0</ind>
+    <dep>23</dep>
+   </entry>
+  </interpolation>
   <center>
    <x-m>5.1</x-m>
    <y-m>0.0</y-m>
@@ -316,7 +355,7 @@
   <type>rotate</type>
   <object-name>Rudder</object-name>
   <property>/surface-positions/rudder-pos-norm</property>
-  <factor>-18</factor>
+  <factor>-17.5</factor>
   <center>
    <x-m>5.45</x-m>
    <y-m>0.0</y-m>
