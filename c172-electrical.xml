@@ -46,30 +46,16 @@
   <bus>
     <name>Essential/Cross Feed Bus</name>
     <prop>/systems/electrical/outputs/bus-essential</prop>
-    <prop>/systems/electrical/outputs/annunciators</prop>
-    <prop>/systems/electrical/outputs/master-switch</prop>
   </bus>
 
   <bus>
     <name>Avionics Bus 1</name>
     <prop>/systems/electrical/outputs/bus-avionics[0]</prop>
-    <prop>/systems/electrical/outputs/avionics-fan</prop>
-    <prop>/systems/electrical/outputs/gps-mfd</prop>
-    <prop>/systems/electrical/outputs/hsi</prop>
-    <prop>/systems/electrical/outputs/navcom[0]</prop>
-    <prop>/systems/electrical/outputs/dme</prop>
-    <prop>/systems/electrical/outputs/audio-panel[0]</prop>
  </bus>
 
   <bus>
     <name>Avionics Bus 2</name>
     <prop>/systems/electrical/outputs/bus-avionics[1]</prop>
-    <prop>/systems/electrical/outputs/navcom[1]</prop>
-    <prop>/systems/electrical/outputs/audio-panel[1]</prop>
-    <prop>/systems/electrical/outputs/transponder</prop>
-    <prop>/systems/electrical/outputs/autopilot</prop>
-    <prop>/systems/electrical/outputs/adf</prop>
-    <prop>/systems/electrical/outputs/gps</prop>
   </bus>
 
   <bus>
@@ -84,7 +70,7 @@
     <prop>/systems/electrical/outputs/starter[0]</prop>
   </output>
 
-  <!-- Bus 1 Outputs -->
+  <!-- Electrical Bus 1 Outputs -->
 
   <output>
     <name>Cabin Lights Power</name>
@@ -116,7 +102,7 @@
     <prop>/systems/electrical/outputs/flaps</prop>
   </output>
 
-  <!-- Bus 2 Outputs -->
+  <!-- Electrical Bus 2 Outputs -->
 
   <output>
     <name>Turn Coordinator Power</name>
@@ -148,6 +134,76 @@
     <prop>/systems/electrical/outputs/pitot-heat</prop>
   </output>
 
+  <!-- Essential/Cross Feed Bus Outputs -->
+
+  <output>
+    <name>Annunciator Power</name>
+    <prop>/systems/electrical/outputs/annunciators</prop>
+  </output>
+
+  <!-- <output> -->
+  <!--   <name>Master Switch Power</name> -->
+  <!--   <prop>/systems/electrical/outputs/master-switch</prop> -->
+  <!-- </output> -->
+
+  <!-- Avionics Bus 1 -->
+
+  <output>
+    <name>Avionics Fan Power</name>
+    <prop>/systems/electrical/outputs/avionics-fan</prop>
+  </output>
+
+  <output>
+    <name>GPS MFD Power</name>
+    <prop>/systems/electrical/outputs/gps-mfd</prop>
+  </output>
+
+  <output>
+    <name>HSI Power</name>
+    <prop>/systems/electrical/outputs/hsi</prop>
+  </output>
+
+  <output>
+    <name>NavCom 1 Power</name>
+    <prop>/systems/electrical/outputs/navcom[0]</prop>
+  </output>
+
+  <output>
+    <name>DME Power</name>
+    <prop>/systems/electrical/outputs/dme</prop>
+  </output>
+
+  <output>
+    <name>Audio Panel 1 Power</name>
+    <prop>/systems/electrical/outputs/audio-panel[0]</prop>
+  </output>
+
+  <!-- Avionics Bus 2 -->
+
+  <output>
+    <name>NavCom 2 Power</name>
+    <prop>/systems/electrical/outputs/navcom[1]</prop>
+  </output>
+
+  <output>
+    <name>Audio Panel 2 Power</name>
+    <prop>/systems/electrical/outputs/audio-panel[1]</prop>
+  </output>
+
+  <output>
+    <name>Transponder Power</name>
+    <prop>/systems/electrical/outputs/transponder</prop>
+  </output>
+
+  <output>
+    <name>Autopilot Power</name>
+    <prop>/systems/electrical/outputs/autopilot</prop>
+  </output>
+
+  <output>
+    <name>ADF Power</name>
+    <prop>/systems/electrical/outputs/adf</prop>
+  </output>
 
   <!-- connect in power sources -->
 
@@ -289,6 +345,90 @@
     <input>Electrical Bus 2</input>
     <output>Pitot Heat Power</output>
     <switch>/controls/switches/pitot-heat</switch>
+  </connector>
+
+  <!-- connect Essential/Crossfeed Bus outputs -->
+
+  <connector>
+    <input>Essential/Cross Feed Bus</input>
+    <output>Annunciator Power</output>
+    <switch>/controls/circuit-breakers/warn</switch>
+  </connector>
+
+  <!-- <connector> -->
+  <!--   <input>Essential/Cross Feed Bus</input> -->
+  <!--   <output>Master Switch Power</output> -->
+  <!--   <switch>/controls/circuit-breakers/alt-fld</switch> -->
+  <!-- </connector> -->
+
+  <!-- connect Avionics Bus 1 outputs -->
+
+  <connector>
+    <input>Avionics Bus 1</input>
+    <output>Avionics Fan Power</output>
+    <switch>/controls/circuit-breakers/avn-fan</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 1</input>
+    <output>GPS MFD Power</output>
+    <switch>/controls/circuit-breakers/gps</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 1</input>
+    <output>HSI Power</output>
+    <switch>/controls/circuit-breakers/gyro</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 1</input>
+    <output>NavCom 1 Power</output>
+    <switch>/controls/circuit-breakers/nav-com-1</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 1</input>
+    <output>DME Power</output>
+    <switch>/controls/circuit-breakers/dme</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 1</input>
+    <output>Audio Panel 1 Power</output>
+    <switch>/controls/circuit-breakers/nav-com-audio-1</switch>
+  </connector>
+
+  <!-- Avionics Bus 2 -->
+
+  <connector>
+    <input>Avionics Bus 2</input>
+    <output>NavCom 2 Power</output>
+    <switch>/controls/circuit-breakers/nav-com-2</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 2</input>
+    <output>Audio Panel 2 Power</output>
+    <switch>/controls/circuit-breakers/nav-com-audio-2</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 2</input>
+    <output>Transponder Power</output>
+    <switch>/controls/circuit-breakers/xpndr</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 2</input>
+    <output>Autopilot Power</output>
+    <switch>/controls/circuit-breakers/autopilot</switch>
+  </connector>
+
+  <connector>
+    <input>Avionics Bus 2</input>
+    <output>ADF Power</output>
+    <switch>/controls/circuit-breakers/adf</switch>
   </connector>
 
 </PropertyList>
