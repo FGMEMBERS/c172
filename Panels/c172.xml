@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+
+<!--
+Cessna 172 Skyhawk panel.
+October 2000
+John Check <j4strngs@rockfish.net>
+_______________________________________________________________________
+
+This is a panel configuration file for the open-source flight
+simulator FlightGear (www.flightgear.org).  The file is an XML-encoded
+FlightGear property list defining the panel's background texture and
+the location (and optionally, size) of the instruments that will
+appear on the panel.
+
+Each instrument is, itself, defined in an XML-encoded property list
+in a separate file.
+
+Co-ordinates are relative to the *bottom* left corner of the screen
+(as in OpenGL).  The total FlightGear window is always considered to
+be 1024x768, whatever its actual display size on the screen.  All
+paths are relative to $FG_ROOT.
+
+Note that the name of the element defining each instrument must be
+different, or else instrument definitions will be overwritten:
+that's not particularly XML-ish, but that's how property lists
+work in FlightGear right now.
+
+Each instrument has its own preferred width and height, but you can
+override those by providing <w>..</w> and <h>..</h> properties with the
+<x>...</x> and <y>...</y> properties.
+-->
+
+<PropertyList>
+
+ <name>Cessna C172 Skyhawk Panel</name>
+
+ <background>Aircraft/c172/Panels/Textures/shaped-bg.rgb</background>
+ <view-height>427</view-height>
+ <!--h>500</h-->
+ <instruments>
+<!-- comical tail number -->
+  <tail_number>
+   <path>Aircraft/c172/Instruments/logo.xml</path>
+   <x>390</x>
+   <y>423</y>
+   <w>72</w>
+   <h>32</h>
+  </tail_number>
+
+<!-- engine guage cluster --> 
+  <clock>
+   <path>Aircraft/c172/Instruments/clock.xml</path>
+   <x>150</x>
+   <y>345</y>
+   <w>72</w>
+   <h>72</h>
+  </clock>
+
+  <egt>
+   <path>Aircraft/c172/Instruments/egt.xml</path>
+   <x>150</x>
+   <y>268</y>
+   <w>72</w>
+   <h>72</h>
+  </egt>
+
+  <fuel>
+   <path>Aircraft/c172/Instruments/fuel.xml</path>
+   <x>75</x>
+   <y>268</y>
+   <w>72</w>
+   <h>72</h>
+  </fuel>
+
+  <oil>
+   <path>Aircraft/c172/Instruments/oil.xml</path>
+   <x>75</x>
+   <y>188</y>
+   <w>72</w>
+   <h>72</h>
+  </oil>
+  
+  <vacamp>
+   <path>Aircraft/c172/Instruments/vacamp.xml</path>
+   <x>150</x>
+   <y>188</y>
+   <w>72</w>
+   <h>72</h>
+  </vacamp>
+
+  <manifold_pressure>
+   <path>Aircraft/c172/Instruments/manifold-press.xml</path>
+   <x>255</x>
+   <y>79</y>
+   <w>120</w>
+   <h>120</h>
+  </manifold_pressure>
+<!-- end engine guages cluster -->
+
+<!-- engine controls cluster --> 
+ 
+  <rpm>
+   <path>Aircraft/c172/Instruments/rpm.xml</path>
+   <x>520</x>
+   <y>79</y>
+   <w>120</w>
+   <h>120</h>
+  </rpm>
+
+  <throttle>
+   <path>Aircraft/c172/Instruments/throttle-knob.xml</path>
+   <x>785</x>
+   <y>60</y>
+  </throttle>
+
+  <mixture>
+   <path>Aircraft/c172/Instruments/mixture-knob.xml</path>
+   <x>865</x>
+   <y>60</y>
+  </mixture>
+  
+<!--  end engine controls cluster -->
+  
+<!-- controls visual feedback cluster --> 
+
+  <flaps>
+   <path>Aircraft/c172/Instruments/flap.xml</path>
+   <x>950</x>
+   <y>75</y>
+  </flaps>
+
+  <brake>
+   <path>Aircraft/c172/Instruments/brakes.xml</path>
+   <x>390</x>
+   <y>130</y>
+  </brake>
+
+  <controls>
+   <path>Aircraft/c172/Instruments/controls.xml</path>
+   <x>390</x>
+   <y>70</y>
+   <w>90</w>
+   <h>90</h>
+  </controls>
+
+<!-- end controls visual feedback cluster -->
+
+<!-- sacred six -->
+
+  <airspeed>
+   <path>Aircraft/c172/Instruments/airspeed.xml</path>
+   <x>255</x>
+   <y>345</y>
+   <w>120</w>
+   <h>120</h>
+  </airspeed>
+
+  <horizon>
+   <path>Aircraft/c172/Instruments/horizon.xml</path>
+   <x>390</x>
+   <y>345</y>
+   <w>120</w>
+   <h>120</h>
+  </horizon>
+
+  <altimeter>
+   <path>Aircraft/c172/Instruments/altimeter.xml</path>
+   <x>520</x>
+   <y>345</y>
+   <w>120</w>
+   <h>120</h>
+  </altimeter>
+
+  <turn>
+   <path>Aircraft/c172/Instruments/turn.xml</path>
+   <x>255</x>
+   <y>212</y>
+   <w>120</w>
+   <h>120</h>
+  </turn>
+
+  <gyro>
+   <path>Aircraft/c172/Instruments/gyro.xml</path>
+   <x>390</x>
+   <y>212</y>
+   <w>120</w>
+   <h>120</h>
+  </gyro>
+
+  <vertical>
+   <path>Aircraft/c172/Instruments/vertical.xml</path>
+   <x>520</x>
+   <y>212</y>
+   <w>120</w>
+   <h>120</h>
+  </vertical>
+
+<!-- end sacred six -->
+
+
+
+<!-- radio nav instruments --> 
+
+  <nav1>
+   <path>Aircraft/c172/Instruments/nav1.xml</path>
+   <x>665</x>
+   <y>345</y>
+   <w>120</w>
+   <h>120</h>
+  </nav1>
+
+  <nav2>
+   <path>Aircraft/c172/Instruments/nav2.xml</path>
+   <x>665</x>
+   <y>212</y>
+   <w>120</w>
+   <h>120</h>
+  </nav2>
+
+  <adf>
+   <path>Aircraft/c172/Instruments/adf.xml</path>
+   <x>665</x>
+   <y>79</y>
+   <w>120</w>
+   <h>120</h>
+  </adf>
+
+<!-- end radio nav instruments -->
+
+
+<!-- radio stack -->
+
+  <dme>
+   <path>Aircraft/c172/Instruments/dme.xml</path>
+   <x>880</x>
+   <y>371</y>
+  </dme>
+
+  <navcom1-radio>
+   <path>Aircraft/c172/Instruments/navcom1-radio.xml</path>
+   <x>880</x>
+   <y>307</y>
+  </navcom1-radio>
+
+  <navcom2-radio>
+   <path>Aircraft/c172/Instruments/navcom2-radio.xml</path>
+   <x>880</x>
+   <y>242</y>
+  </navcom2-radio>
+
+  <adf-radio>
+   <path>Aircraft/c172/Instruments/adf-radio.xml</path>
+   <x>880</x>
+   <y>179</y>
+  </adf-radio>
+
+  <autopilot>
+   <path>Aircraft/c172/Instruments/autopilot.xml</path>
+   <x>880</x>
+   <y>131</y>
+  </autopilot>
+
+<!-- end radio stack -->
+
+  <magcompass>
+   <path>Aircraft/c172/Instruments/magcompass.xml</path>
+   <x>768</x>
+   <y>459</y>
+  </magcompass>
+ </instruments>
+
+</PropertyList>
