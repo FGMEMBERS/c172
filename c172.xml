@@ -117,7 +117,7 @@
       YLOC    0.0
       ZLOC   59.4
       PITCH   0.0
-      YAW    -0.0872
+      YAW     0.0
     </AC_THRUSTER>
 
     <AC_TANK TYPE="FUEL" NUMBER="0">
@@ -252,9 +252,9 @@
          FG_FLAPS_POS
          FG_QBAR|FG_WINGAREA
          0   0
-         10  0.002
-         20  0.009
-         30  0.02
+         10  0.01
+         20  0.03
+         30  0.05
        </COEFFICIENT>
       <COEFFICIENT NAME="CDalpha" TYPE="TABLE">
          Drag_due_to_alpha
