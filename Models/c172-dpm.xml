@@ -4,6 +4,44 @@
 
  <path>c172-dpm.ac</path>
 
+ <!-- LOD for the model as a whole -->
+
+ <range>
+  <min-m>0</min-m>
+  <max-m>10000</max-m>
+ </range>
+
+ <!-- LOD for specific objects -->
+
+ <animation>
+  <type>range</type>
+  <object-name>Cabin</object-name>
+  <object-name>Seat.1</object-name>
+  <object-name>Seat.2</object-name>
+  <object-name>Seat.3</object-name>
+  <object-name>Seat.4</object-name>
+  <min-m>0</min-m>
+  <max-m>50</max-m>
+ </animation>
+
+ <animation>
+  <type>range</type>
+  <object-name>Yoke.1</object-name>
+  <object-name>Yoke.2</object-name>
+  <object-name>Pedal.1</object-name>
+  <object-name>Pedal.2</object-name>
+  <object-name>Pedal.3</object-name>
+  <object-name>Pedal.4</object-name>
+  <object-name>Throttle</object-name>
+  <object-name>Mixture</object-name>
+  <object-name>Compass</object-name>
+  <object-name>Pedestal</object-name>
+  <min-m>0</min-m>
+  <max-m>3</max-m>
+ </animation>
+
+ <!-- Object movements -->
+
  <animation>
   <type>select</type>
   <object-name>Propeller</object-name>
