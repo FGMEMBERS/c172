@@ -34,8 +34,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <PropertyList>
 
- <name>Cessna C172 Skyhawk Panel</name>
- <background>Aircraft/c172/Panels/Textures/panel-bg.rgb</background>
+ <name>Cessna C172 Skyhawk IFR Panel</name>
+ <background>Aircraft/c172/Panels/Textures/ifr-panel-bg.rgb</background>
  <w>1024</w>
  <h>768</h>
  <y-offset>-305</y-offset>
@@ -46,10 +46,10 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- comical tail number -->
   <instrument include="../Instruments/logo.xml">
    <name>Tail Number Plate</name>
-   <x>390</x>
-   <y>735</y>
-   <w>72</w>
-   <h>32</h>
+   <x>405</x>
+   <y>763</y>
+   <w>70</w>
+   <h>30</h>
   </instrument>
 
 <!-- engine guage cluster -->  
@@ -95,8 +95,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/manifold-press.xml">
    <name>Manifold Pressure Gauge</name>
-   <x>257</x>
-   <y>379</y>
+   <x>272</x>
+   <y>374</y>
    <w>120</w>
    <h>120</h>
   </instrument>
@@ -106,21 +106,21 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  
   <instrument include="../Instruments/rpm.xml">
    <name>RPM Gauge</name>
-   <x>520</x>
-   <y>379</y>
+   <x>530</x>
+   <y>374</y>
    <w>120</w>
    <h>120</h>
   </instrument>
 
   <instrument include="../Instruments/throttle-knob.xml">
    <name>Throttle Knob</name>
-   <x>785</x>
+   <x>805</x>
    <y>360</y>
   </instrument>
 
   <instrument include="../Instruments/mixture-knob.xml">
    <name>Fuel Mixture Knob</name>
-   <x>865</x>
+   <x>885</x>
    <y>360</y>
   </instrument>
 
@@ -142,14 +142,14 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
-   <x>390</x>
-   <y>430</y>
+   <x>405</x>
+   <y>327</y>
   </instrument>
 
   <instrument include="../Instruments/controls.xml">
    <name>Control Position Indicators</name>
-   <x>390</x>
-   <y>370</y>
+   <x>405</x>
+   <y>390</y>
    <w>90</w>
    <h>90</h>
   </instrument>
@@ -160,7 +160,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/asi.xml">
    <name>Airspeed Indicator</name>
-   <x>257</x>
+   <x>272</x>
    <y>645</y>
    <w>128</w>
    <h>128</h>
@@ -168,7 +168,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/horizon.xml">
    <name>Attitude Gyro</name>
-   <x>390</x>
+   <x>405</x>
    <y>645</y>
    <w>128</w>
    <h>128</h>
@@ -176,7 +176,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/altimeter.xml">
    <name>Altimeter</name>
-   <x>520</x>
+   <x>530</x>
    <y>645</y>
    <w>120</w>
    <h>120</h>
@@ -184,7 +184,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/turn.xml">
    <name>Turn Coordinator</name>
-   <x>257</x>
+   <x>272</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
@@ -192,7 +192,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/hsi.xml">
    <name>Directional Gyro</name>
-   <x>390</x>
+   <x>405</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
@@ -200,7 +200,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
-   <x>520</x>
+   <x>530</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
@@ -214,7 +214,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/nav2.xml">
    <name>VOR 1 Gauge</name>
-   <x>665</x>
+   <x>675</x>
    <y>645</y>
    <w>120</w>
    <h>120</h>
@@ -222,7 +222,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!--
   <instrument include="../Instruments/nav2.xml">
    <name>VOR 2 Gauge</name>
-   <x>665</x>
+   <x>685</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
@@ -230,7 +230,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/adf.xml">
    <name>ADF Gauge</name>
-   <x>665</x>
+   <x>685</x>
    <y>379</y>
    <w>120</w>
    <h>120</h>
