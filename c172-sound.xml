@@ -163,11 +163,12 @@
  
   <stall>
    <name>stall</name>
+   <mode>looped</mode>
    <path>Sounds/stall.wav</path>
    <property>/sim/aero/alarms/stall-warning</property>
    <volume>
-    <property>/velocities/airspeed-kt</property>
-    <min>30.0</min>
+    <property>/sim/aero/alarms/stall-warning</property>
+    <max>1.0</max>
    </volume>
   </stall>
  
