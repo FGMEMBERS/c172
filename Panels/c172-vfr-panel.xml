@@ -92,6 +92,7 @@ override those by providing <w>Aircraft</w> and <h>..</h> properties with the
    <h>74</h>
   </instrument>
 
+<!--
   <instrument include="../../Instruments/single-manifold-pressure.xml">
    <name>Manifold Pressure Gauge</name>
    <x>279</x>
@@ -99,6 +100,7 @@ override those by providing <w>Aircraft</w> and <h>..</h> properties with the
    <w>120</w>
    <h>120</h>
   </instrument>
+-->
 
  
   <instrument include="../../Instruments/rpm.xml">
@@ -240,6 +242,8 @@ override those by providing <w>Aircraft</w> and <h>..</h> properties with the
 
 
 <!-- radio stack -->
+
+<!--
   <instrument include="../../Instruments/dme.xml">
    <name>DME Display</name>
    <x>880</x>
@@ -247,6 +251,7 @@ override those by providing <w>Aircraft</w> and <h>..</h> properties with the
    <w>122</w>
    <h>59</h>
   </instrument>
+-->
   
   <instrument include="../../Instruments/markerbeacon.xml">
    <name>Marker Beacon Indicators</name>
