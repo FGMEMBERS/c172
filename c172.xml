@@ -174,7 +174,7 @@
        OUTPUT        FG_LEFT_AILERON_POS
      </COMPONENT>
       <COMPONENT NAME="Right Aileron Control" TYPE="AEROSURFACE_SCALE">
-       ID            3
+       ID            4
        INPUT         FG_AILERON_CMD
        MIN          -20
        MAX           15
@@ -183,13 +183,13 @@
        OUTPUT        FG_RIGHT_AILERON_POS
      </COMPONENT>
      <COMPONENT NAME="Yaw Trim Sum" TYPE="SUMMER">
-       ID            4
+       ID            5
        INPUT        FG_RUDDER_CMD
        INPUT        FG_YAW_TRIM_CMD
        CLIPTO       -1 1
      </COMPONENT>
      <COMPONENT NAME="Rudder Control" TYPE="AEROSURFACE_SCALE">
-       ID            5
+       ID            6
        INPUT        FG_RUDDER_CMD
        MIN         -16
        MAX          16
@@ -197,7 +197,7 @@
        OUTPUT       FG_RUDDER_POS
      </COMPONENT>
      <COMPONENT NAME="Flaps Control" TYPE="KINEMAT">
-       ID           6
+       ID           7
        INPUT        FG_FLAPS_CMD
        DETENTS      4
                     0    0
@@ -548,3 +548,4 @@
     PROPULSION       ON
   </OUTPUT>
 </FDM_CONFIG>
+
