@@ -41,16 +41,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <view-height>768</view-height>
 
  <instruments>
-<!-- comical tail number -->
-  <instrument include="../../Instruments/logo.xml">
-   <name>Tail Number Plate</name>
-   <x>412</x>
-   <y>415</y>
-   <w>72</w>
-   <h>32</h>
-  </instrument>
 
-<!-- engine guage cluster -->  
+<!-- engine gauge cluster -->  
   <instrument include="../../Instruments/clock.xml">
    <name>Chronometer</name>
    <x>177</x>
@@ -105,20 +97,24 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../../Instruments/throttle-knob.xml">
    <name>Throttle Knob</name>
-   <x>785</x>
-   <y>50</y>
+   <x>660</x>
+   <y>-100</y>
+   <w>80</w>
+   <h>80</h>
   </instrument>
 
   <instrument include="../../Instruments/mixture-knob.xml">
    <name>Fuel Mixture Knob</name>
-   <x>865</x>
-   <y>50</y>
+   <x>780</x>
+   <y>-100</y>
+   <w>80</w>
+   <h>80</h>
   </instrument>
 
   <instrument include="../../Instruments/single-magneto-switch.xml">
    <name>Magneto switch panel</name>
-   <x>137</x>
-   <y>48</y>
+   <x>250</x>
+   <y>-125</y>
   </instrument>
 
 <!-- end engine controls cluster -->
@@ -128,21 +124,9 @@ override those by providing <w>..</w> and <h>..</h> properties with the
   <instrument include="../../Instruments/flap.xml">
    <name>Flaps Control</name>
    <x>950</x>
-   <y>55</y>
-  </instrument>
-
-  <instrument include="../../Instruments/brakes.xml">
-   <name>Brake Indicator Light</name>
-   <x>412</x>
-   <y>120</y>
-  </instrument>
-
-  <instrument include="../../Instruments/controls.xml">
-   <name>Control Position Indicators</name>
-   <x>412</x>
-   <y>60</y>
-   <w>90</w>
-   <h>90</h>
+   <y>-110</y>
+   <w>80</w>
+   <h>160</h>
   </instrument>
 
 <!-- end controls visual feedback cluster -->
