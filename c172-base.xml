@@ -19,7 +19,6 @@ Common configuration for all C172 aircraft.
   </systems>
 
   <sound>
-   <audible archive="y">true</audible>
    <path archive="y">Aircraft/c172/c172-sound.xml</path>
   </sound>
 
