@@ -7,7 +7,7 @@ Started October 23 2001 by John Check, fgpanels@rockfish.net
 ************************************************************************
 -->
 
-<PropertyList include="c172-base.xml">
+<PropertyList>
 
  <sim>
 
@@ -25,7 +25,7 @@ Started October 23 2001 by John Check, fgpanels@rockfish.net
   </panel>
 
   <model>
-   <path archive="y">Aircraft/c172/Models/c172-dpm.xml</path>
+   <path archive="y">Aircraft/c172r/Models/c172-dpm.xml</path>
   </model>
 
   <instrument-options>
@@ -36,10 +36,33 @@ Started October 23 2001 by John Check, fgpanels@rockfish.net
    <autopilot>
     <path>Aircraft/c172/610x-autopilot.xml</path>
    </autopilot>
+    <electrical>
+      <path>Aircraft/c172/c172-electrical.xml</path>
+    </electrical>
   </systems>
+
+  <sound>
+   <path archive="y">Aircraft/c172/c172-sound.xml</path>
+  </sound>
 
  </sim>
   
+ <instrumentation>
+  <attitude-indicator>
+   <config>
+    <tumble-flag archive="y" type="bool">true</tumble-flag>
+   </config>
+  </attitude-indicator>
+ </instrumentation>
+
+ <controls>
+  <engines>
+   <engine n="0">
+    <magnetos>3</magnetos>
+   </engine>
+  </engines>
+ </controls>
+
  <engines>
   <engine>
    <rpm type="double">0</rpm>
