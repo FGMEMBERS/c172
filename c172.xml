@@ -1,7 +1,8 @@
-<FDM_CONFIG NAME="c172" VERSION="1.36">
+<FDM_CONFIG NAME="c172" VERSION="1.38">
   <METRICS>
 
     <COMMENT>
+    <!--
     // Wing area
     // Wing span
     // Wing avg. chord
@@ -15,6 +16,7 @@
     // Pilot's eyepoint location, in aircraft's own coord system, FROM cg.
     //  X, Y, Z, in inches
     AC_AERORP   43.2  0.0    59.4
+    -->
     </COMMENT>
 
     AC_WINGAREA 174
@@ -35,7 +37,7 @@
   <UNDERCARRIAGE>
 
     <COMMENT>
-
+    <!--
     The gear parameters that can be specified are as follows, IN ORDER OF APPEARANCE:
 
     AC_GEAR
@@ -45,22 +47,23 @@
     <damping coefficient>            damping coefficient in lbs/ft/sec
     <dynamic friction coefficient>   Self-explanatory: sliding friction coefficient
     <static friction coefficient>    Self-explanatory: "onset" friction coefficient
+    <rolling friction coefficient>   Self-explanatory: rolling friction coefficient
     <steerability attribute>         One of <STEERABLE | FIXED | CASTERED>
     <brake group membership>         One of <LEFT | CENTER | RIGHT | NOSE | TAIL | NONE>
     <max steer angle>                Maximum steerable angle in degrees
-
+    -->
     </COMMENT>
 
-     AC_GEAR	NOSE	    -6.8   0.0  -24.2  900  300  0.01  0.05 STEERABLE NONE 20
-     AC_GEAR	LEFT_MAIN   58.2 -43.0 -17.9  2700  800  0.01  0.05 CASTERED  LEFT  0
-     AC_GEAR	RIGHT_MAIN  58.2  43.0 -17.9  2700  800  0.01  0.05 CASTERED  RIGHT 0
+     AC_GEAR	NOSE	    -6.8   0.0  -24.2  900  300  0.01  0.05 0.02 STEERABLE NONE 20
+     AC_GEAR	LEFT_MAIN   58.2 -43.0 -17.9  2700  800  0.01  0.05 0.02 CASTERED  LEFT  0
+     AC_GEAR	RIGHT_MAIN  58.2  43.0 -17.9  2700  800  0.01  0.05 0.02 CASTERED  RIGHT 0
 
   </UNDERCARRIAGE>
   
   <PROPULSION>
 
     <COMMENT>
-
+    <!--
       TANKS SECTION
 
       Tank locations and characteristics, empty weight, in aircraft's own coord system:
@@ -69,12 +72,47 @@
       capacity in pounds
       Current contents, in pounds
 
+      ENGINE[S] SECTION
+
+      Engine[s] is|are specified by giving engine name (which corresponds to an engine
+      definition file in the "engines" directory) followed by x, y, z placement and
+      pitch and yaw orientation. Coordinates are given in inches in the structural
+      coordinate frame. Angles for pitch and yaw are specified in radians.
+
+      AC_ENGINE name x y z pitch yaw
+
+      THRUSTER[S] SECTION
+
+      AC_THRUSTER name x y z pitch yaw
+    -->
     </COMMENT>
 
-    AC_TANK FUEL      48.0 0.0 59.4  29.4  336.0 336.0
+    <AC_ENGINE FILE="eng_io320">
+      XLOC   48.0
+      YLOC    0.0
+      ZLOC   59.4
+      PITCH   0.0
+      YAW     0.0
+      FEED      0
+    </AC_ENGINE>
+      
+    <AC_THRUSTER FILE="prop_generic2f">
+      XLOC   48.0
+      YLOC    0.0
+      ZLOC   59.4
+      PITCH   0.0
+      YAW     0.0
+    </AC_THRUSTER>
 
-    AC_ENGINE c172
-
+    <AC_TANK TYPE="FUEL" NUMBER="0">
+      XLOC   48.0
+      YLOC    0.0
+      ZLOC   59.4
+      RADIUS 29.4
+      CAPACITY 336.0
+      CONTENTS 336.0
+    </AC_TANK>
+	    
   </PROPULSION>
   
   <FLIGHT_CONTROL NAME="c172">
@@ -229,7 +267,7 @@
        <COEFFICIENT NAME="CYb" TYPE="VALUE">
          Side_force_due_to_beta
          FG_QBAR|FG_WINGAREA|FG_BETA
-         -1.0
+         -1.4
        </COEFFICIENT>
 
        <COEFFICIENT NAME="CYda" TYPE="VALUE">
@@ -241,7 +279,7 @@
       <COEFFICIENT NAME="CYdr" TYPE="VALUE">
          Side_force_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_RUDDER_POS
-         0.36
+         0.45
       </COEFFICIENT>
 
     </AXIS>
@@ -269,13 +307,13 @@
        <COEFFICIENT NAME="Clda" TYPE="VALUE">
          Roll_moment_due_to_aileron
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_AILERON_POS
-         0.12
+         0.09
        </COEFFICIENT>
 
        <COEFFICIENT NAME="Cldr" TYPE="VALUE">
          Roll_moment_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_RUDDER_POS
-         -0.0117
+         -0.0147
         </COEFFICIENT>
 
       </AXIS>
@@ -348,13 +386,13 @@
        <COEFFICIENT NAME="Cndr" TYPE="VALUE">
          Yaw_moment_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_RUDDER_POS
-         -0.053
+         -0.0657
        </COEFFICIENT>
 
     </AXIS>
   </AERODYNAMICS>
   <COMMENT>
-
+  <!--
     OUTPUT section definition
 
     The following specifies the way that JSBSim writes out data.
@@ -395,9 +433,9 @@
     GROUND_REACTIONS ON|OFF
 
     NOTE that Time is always output with the data.
-
+  -->
   </COMMENT>
-  <OUTPUT NAME="JSBout.csv" TYPE="NONE">
+  <OUTPUT NAME="JSBout.csv" TYPE="CSV">
     RATE_IN_HZ       20
     SIMULATION       OFF
     ATMOSPHERE       OFF
@@ -412,10 +450,4 @@
     GROUND_REACTIONS OFF
     FCS              OFF
   </OUTPUT>
- 
-
 </FDM_CONFIG>
-
-
-
- 
