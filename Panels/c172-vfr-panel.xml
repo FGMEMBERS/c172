@@ -150,13 +150,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- end engine controls cluster -->
   
 <!-- controls visual feedback cluster -->  
-<!--
+
   <instrument include="../../Instruments/flap.xml">
    <name>Flaps Control</name>
    <x>950</x>
    <y>55</y>
   </instrument>
--->
+
   <instrument include="../../Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
    <x>412</x>
