@@ -34,69 +34,69 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <PropertyList>
 
- <name>Cessna C172 Skyhawk IFR Panel</name>
- <background>Aircraft/c172/Panels/Textures/ifr-panel-bg.rgb</background>
+ <name>Cessna C172 Skyhawk Panel</name>
+ <background>Aircraft/c172/Panels/Textures/panel-bg.rgb</background>
  <w>1024</w>
  <h>768</h>
  <y-offset>-305</y-offset>
- <view-height>172</view-height>
+ <view-height>195</view-height>
 
  <instruments>
 
 <!-- comical tail number -->
   <instrument include="../Instruments/logo.xml">
    <name>Tail Number Plate</name>
-   <x>405</x>
-   <y>763</y>
-   <w>70</w>
-   <h>30</h>
+   <x>412</x>
+   <y>725</y>
+   <w>72</w>
+   <h>32</h>
   </instrument>
 
 <!-- engine guage cluster -->  
   <instrument include="../Instruments/clock.xml">
    <name>Chronometer</name>
-   <x>155</x>
+   <x>177</x>
    <y>626</y>
-   <w>78</w>
-   <h>78</h>
+   <w>74</w>
+   <h>74</h>
   </instrument>
 
   <instrument include="../Instruments/egt.xml">
    <name>Exhaust Gas Temperature Gauge</name>
-   <x>155</x>
+   <x>177</x>
    <y>552</y>
-   <w>78</w>
-   <h>78</h>
+   <w>74</w>
+   <h>74</h>
   </instrument>
 
   <instrument include="../Instruments/fuel.xml">
    <name>Fuel Gauge</name>
-   <x>78</x>
+   <x>100</x>
    <y>552</y>
-   <w>78</w>
-   <h>78</h>
+   <w>74</w>
+   <h>74</h>
   </instrument>
 
   <instrument include="../Instruments/oil.xml">
    <name>Oil Gauge</name>
-   <x>78</x>
+   <x>100</x>
    <y>475</y>
-   <w>78</w>
-   <h>78</h>
+   <w>74</w>
+   <h>74</h>
   </instrument>
   
   <instrument include="../Instruments/vacamp.xml">
    <name>Vacuum Pressure Gauge</name>
-   <x>155</x>
+   <x>177</x>
    <y>475</y>
-   <w>78</w>
-   <h>78</h>
+   <w>74</w>
+   <h>74</h>
   </instrument>
 
   <instrument include="../Instruments/manifold-press.xml">
    <name>Manifold Pressure Gauge</name>
-   <x>272</x>
-   <y>374</y>
+   <x>279</x>
+   <y>379</y>
    <w>120</w>
    <h>120</h>
   </instrument>
@@ -106,27 +106,27 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  
   <instrument include="../Instruments/rpm.xml">
    <name>RPM Gauge</name>
-   <x>530</x>
-   <y>374</y>
+   <x>542</x>
+   <y>379</y>
    <w>120</w>
    <h>120</h>
   </instrument>
 
   <instrument include="../Instruments/throttle-knob.xml">
    <name>Throttle Knob</name>
-   <x>805</x>
+   <x>785</x>
    <y>360</y>
   </instrument>
 
   <instrument include="../Instruments/mixture-knob.xml">
    <name>Fuel Mixture Knob</name>
-   <x>885</x>
+   <x>865</x>
    <y>360</y>
   </instrument>
 
   <instrument include="../Instruments/magneto-switch.xml">
    <name>Magneto switch panel</name>
-   <x>115</x>
+   <x>137</x>
    <y>358</y>
   </instrument>
 
@@ -142,14 +142,14 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
-   <x>405</x>
-   <y>327</y>
+   <x>412</x>
+   <y>430</y>
   </instrument>
 
   <instrument include="../Instruments/controls.xml">
    <name>Control Position Indicators</name>
-   <x>405</x>
-   <y>390</y>
+   <x>412</x>
+   <y>370</y>
    <w>90</w>
    <h>90</h>
   </instrument>
@@ -160,7 +160,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/asi.xml">
    <name>Airspeed Indicator</name>
-   <x>272</x>
+   <x>279</x>
    <y>645</y>
    <w>128</w>
    <h>128</h>
@@ -168,7 +168,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/horizon.xml">
    <name>Attitude Gyro</name>
-   <x>405</x>
+   <x>412</x>
    <y>645</y>
    <w>128</w>
    <h>128</h>
@@ -176,7 +176,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/altimeter.xml">
    <name>Altimeter</name>
-   <x>530</x>
+   <x>542</x>
    <y>645</y>
    <w>120</w>
    <h>120</h>
@@ -184,7 +184,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/turn.xml">
    <name>Turn Coordinator</name>
-   <x>272</x>
+   <x>279</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
@@ -192,23 +192,21 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
   <instrument include="../Instruments/hsi.xml">
    <name>Directional Gyro</name>
-   <x>405</x>
+   <x>412</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
-0  </instrument>
+  </instrument>
 
   <instrument include="../Instruments/vertical.xml">
    <name>Vertical Velocity Indicator</name>
-   <x>530</x>
+   <x>542</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
   </instrument>
 
 <!-- end sacred six -->
-
-
 
 <!-- radio nav instruments --> 
 
@@ -309,5 +307,6 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <y>782</y>
   </instrument>
  </instruments>
+
 
 </PropertyList>
