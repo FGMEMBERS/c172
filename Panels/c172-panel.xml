@@ -206,7 +206,7 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- radio nav instruments --> 
 
-  <instrument include="../Instruments/nav1.xml">
+  <instrument include="../Instruments/hsi.xml">
    <name>VOR 1 Gauge</name>
    <x>665</x>
    <y>645</y>
