@@ -7,7 +7,7 @@ Started October 23 2001 by John Check, fgpanels@rockfish.net
 ************************************************************************
 -->
 
-<PropertyList include="c172r-jsbsim-base.xml">
+<PropertyList include="../c172r/c172r-jsbsim-base.xml">
 
  <sim>
 
