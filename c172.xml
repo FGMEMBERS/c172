@@ -31,13 +31,13 @@
     AC_AERORP   43.2  0.0    59.4
     -->
 
-    AC_WINGAREA  174
-    AC_WINGSPAN  35.8
-    AC_CHORD     4.9
-    AC_HTAILAREA 21.9
-    AC_HTAILARM  15.7
-    AC_VTAILAREA 16.5
-    AC_LV        15.7
+    AC_WINGAREA  174   <!-- square feet -->
+    AC_WINGSPAN  35.8  <!-- ft          -->
+    AC_CHORD     4.9   <!-- ft          -->
+    AC_HTAILAREA 21.9  <!-- square feet -->
+    AC_HTAILARM  15.7  <!-- ft          -->
+    AC_VTAILAREA 16.5  <!-- square feet -->
+    AC_LV        15.7  <!-- ft          -->
     AC_IXX    948
     AC_IYY    1346
     AC_IZZ    1967
@@ -68,13 +68,12 @@
     <max steer angle>                Maximum steerable angle in degrees
     -->
 
-
-     AC_GEAR	NOSE        -6.8   0.0 -20.0  1800  600  0.5  0.8 0.02 STEERABLE NONE 20
-     AC_GEAR	LEFT_MAIN   58.2 -43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  LEFT  0
-     AC_GEAR	RIGHT_MAIN  58.2  43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  RIGHT 0
-     AC_GEAR	TAIL_SKID  188.0  0.0    8.0 20000 1000  0.2   0.2 0.2  FIXED NONE 0
-     AC_GEAR	LEFT_TIP    43.2 -214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
-     AC_GEAR	RIGHT_TIP   43.2  214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
+     AC_GEAR  NOSE        -6.8   0.0 -20.0  1800  600  0.5  0.8 0.02 STEERABLE NONE 20
+     AC_GEAR  LEFT_MAIN   58.2 -43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  LEFT  0
+     AC_GEAR  RIGHT_MAIN  58.2  43.0 -17.9  5400 1600  0.5  0.8 0.02 CASTERED  RIGHT 0
+     AC_GEAR  TAIL_SKID  188.0  0.0    8.0 20000 1000  0.2   0.2 0.2  FIXED NONE 0
+     AC_GEAR  LEFT_TIP    43.2 -214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
+     AC_GEAR  RIGHT_TIP   43.2  214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0
 
 </UNDERCARRIAGE>
 
