@@ -237,6 +237,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <name>DME Display</name>
    <x>880</x>
    <y>671</y>
+   <w>122</w>
+   <h>59</h>
   </instrument>
 
   <instrument include="../Instruments/markerbeacon.xml">

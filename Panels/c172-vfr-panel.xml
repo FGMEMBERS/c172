@@ -255,6 +255,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <name>DME Display</name>
    <x>880</x>
    <y>671</y>
+   <w>122</w>
+   <h>59</h>
   </instrument>
   
   <instrument include="../Instruments/markerbeacon.xml">
@@ -280,19 +282,19 @@ override those by providing <w>..</w> and <h>..</h> properties with the
     <nav-morse-ident-toggle-prop>/radios/nav[1]/ident</nav-morse-ident-toggle-prop>
    </params>
    <x>880</x>
-   <y>542</y>
+   <y>546</y>
   </instrument>
   
   <instrument include="../Instruments/adf-radio.xml">
    <name>ADF Radio</name>
    <x>880</x>
-   <y>479</y>
+   <y>485</y>
   </instrument>
 
   <instrument include="../Instruments/autopilot.xml">
    <name>Autopilot</name>
    <x>880</x>
-   <y>431</y>
+   <y>439</y>
   </instrument>
 
 <!-- end radio stack -->
