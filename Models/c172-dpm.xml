@@ -248,13 +248,13 @@
   <property>/surface-positions/left-aileron-pos-norm</property>
   <factor>-30</factor>
   <center>
-   <x-m>1.4</x-m>
-   <y-m>0.0</y-m>
-   <z-m>0.3</z-m>
+   <x-m>0.94</x-m>
+   <y-m>-3.83</y-m>
+   <z-m>0.40</z-m>
   </center>
   <axis>
    <x>-0.15</x>
-   <y>-1.0</y>
+   <y>-1.00</y>
    <z>0.03</z>
   </axis>
  </animation>
@@ -265,13 +265,13 @@
   <property>/surface-positions/right-aileron-pos-norm</property>
   <factor>30</factor>
   <center>
-   <x-m>1.4</x-m>
-   <y-m>0.0</y-m>
-   <z-m>0.3</z-m>
+   <x-m>0.94</x-m>
+   <y-m>3.83</y-m>
+   <z-m>0.40</z-m>
   </center>
   <axis>
    <x>-0.15</x>
-   <y>1.0</y>
+   <y>1.00</y>
    <z>0.03</z>
   </axis>
  </animation>
