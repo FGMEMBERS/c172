@@ -43,6 +43,36 @@
     </config>
   </pid-controller>
 
+  <!-- Bank hold --> 
+  <pid-controller>
+    <name>Bank Hold</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/heading</prop>
+      <value>bank-hold</value>
+    </enable>
+    <input>
+      <prop>/orientation/roll-deg</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/settings/target-bank-deg</prop>
+    </reference>
+    <output>
+      <prop>/controls/flight/aileron</prop>
+    </output>
+    <config>
+      <Kp>1.0</Kp>        <!-- proportional gain -->
+      <beta>1.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+                          <!-- unfiltered derivative error -->
+      <Ti>1.0</Ti>       <!-- integrator time -->
+      <Td>0.0000001</Td>    <!-- derivator time -->
+      <u_min>-1.0</u_min> <!-- minimum output clamp -->
+      <u_max>1.0</u_max>  <!-- maximum output clamp -->
+    </config>
+  </pid-controller>
+
   <!-- Heading Bug Hold.  2 stage cascade controller. -->
 
   <!-- Stage #1 sets target roll based on diff between current heading -->
@@ -55,7 +85,7 @@
       <value>dg-heading-hold</value>
     </enable>
     <input>
-      <prop>/autopilot/internal/heading-bug-error-deg</prop>
+      <prop>/autopilot/internal/fdm-heading-bug-error-deg</prop>
     </input>
     <reference>
       <value>0.0</value>
@@ -267,6 +297,36 @@
     </config>
    </pid-controller>
 
+ <!-- Simple pitch hold with yoke --> 
+ <pid-controller>
+    <name>Pitch hold w/ yoke</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/altitude</prop>
+      <value>pitch-hold-yoke</value>
+    </enable>
+    <input>
+      <prop>/orientation/pitch-deg</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/settings/target-pitch-deg</prop>
+    </reference>
+    <output>
+      <prop>/controls/flight/elevator</prop>
+    </output>
+    <config>
+      <Kp>-0.05</Kp>      <!-- proportional gain -->
+      <beta>2.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+                          <!-- unfiltered derivative error -->
+      <Ti>1.0</Ti>        <!-- integrator time -->
+      <Td>0.00001</Td>    <!-- derivator time -->
+      <u_min>-1.0</u_min> <!-- minimum output clamp -->
+      <u_max>1.0</u_max>  <!-- maximum output clamp -->
+    </config>
+   </pid-controller>
+
  <!-- Simple angle of attack hold --> 
  <pid-controller>
     <name>AOA hold</name>
@@ -303,7 +363,7 @@
   <!-- and target altitude. -->
   <pi-simple-controller>
     <name>Altitude Hold (Altimeter based) Stage 1</name>
-    <debug>true</debug>
+    <debug>false</debug>
     <enable>
       <prop>/autopilot/locks/altitude</prop>
       <value>altitude-hold</value>
@@ -493,13 +553,13 @@
     </config>
   </pid-controller>
 
- <!-- Hold speed by varying pitch (Two stage cascading controller) --> 
+ <!-- Hold speed by varying pitch trim (Two stage cascading controller) --> 
  <pid-controller>
-    <name>Speed hold (vary pitch) Stage #1</name>
+    <name>Speed hold (vary pitch trim) Stage #1</name>
     <debug>false</debug>
     <enable>
       <prop>/autopilot/locks/speed</prop>
-      <value>speed-with-pitch</value>
+      <value>speed-with-pitch-trim</value>
     </enable>
     <input>
       <!-- <prop>/autopilot/internal/lookahead-5-sec-airspeed-kt</prop> -->
@@ -525,11 +585,11 @@
   </pid-controller>
 
  <pid-controller>
-    <name>Speed hold (vary pitch) Stage #2</name>
+    <name>Speed hold (vary pitch trim) Stage #2</name>
     <debug>false</debug>
     <enable>
       <prop>/autopilot/locks/speed</prop>
-      <value>speed-with-pitch</value>
+      <value>speed-with-pitch-trim</value>
     </enable>
     <input>
       <prop>/orientation/pitch-deg</prop>
@@ -547,6 +607,66 @@
       <gamma>0.0</gamma>  <!-- input value weighing factor for -->
                           <!-- unfiltered derivative error -->
       <Ti>1.0</Ti>        <!-- integrator time -->
+      <Td>0.00001</Td>    <!-- derivator time -->
+      <u_min>-1.0</u_min> <!-- minimum output clamp -->
+      <u_max>1.0</u_max>  <!-- maximum output clamp -->
+    </config>
+  </pid-controller>
+
+ <!-- Hold speed by varying pitch via yoke (Two stage cascading controller) --> 
+ <pid-controller>
+    <name>Speed hold (vary pitch via yoke) Stage #1</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/speed</prop>
+      <value>speed-with-pitch-yoke</value>
+    </enable>
+    <input>
+      <!-- <prop>/autopilot/internal/lookahead-5-sec-airspeed-kt</prop> -->
+      <prop>/velocities/airspeed-kt</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/settings/target-speed-kt</prop>
+    </reference>
+    <output>
+      <prop>/autopilot/settings/target-pitch-deg</prop>
+    </output>
+    <config>
+      <Kp>-1.0</Kp>       <!-- proportional gain -->
+      <beta>1.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+                          <!-- unfiltered derivative error -->
+      <Ti>2.0</Ti>        <!-- integrator time -->
+      <Td>0.00001</Td>    <!-- derivator time -->
+      <u_min>-15.0</u_min><!-- minimum output clamp -->
+      <u_max>15.0</u_max> <!-- maximum output clamp -->
+    </config>
+  </pid-controller>
+
+ <pid-controller>
+    <name>Speed hold (vary pitch via yoke) Stage #2</name>
+    <debug>false</debug>
+    <enable>
+      <prop>/autopilot/locks/speed</prop>
+      <value>speed-with-pitch-yoke</value>
+    </enable>
+    <input>
+      <prop>/orientation/pitch-deg</prop>
+    </input>
+    <reference>
+      <prop>/autopilot/settings/target-pitch-deg</prop>
+    </reference>
+    <output>
+      <prop>/controls/flight/elevator</prop>
+    </output>
+    <config>
+      <Kp>-0.1</Kp>      <!-- proportional gain -->
+      <beta>1.0</beta>    <!-- input value weighing factor -->
+      <alpha>0.1</alpha>  <!-- low pass filter weighing factor -->
+      <gamma>0.0</gamma>  <!-- input value weighing factor for -->
+                          <!-- unfiltered derivative error -->
+      <Ti>2.0</Ti>        <!-- integrator time -->
       <Td>0.00001</Td>    <!-- derivator time -->
       <u_min>-1.0</u_min> <!-- minimum output clamp -->
       <u_max>1.0</u_max>  <!-- maximum output clamp -->
