@@ -89,7 +89,7 @@
  <animation>
   <type>translate</type>
   <object-name>Throttle</object-name>
-  <property>/controls/throttle[0]</property>
+  <property>/controls/engines/engine[0]/throttle</property>
   <factor>-0.1</factor>
   <axis>
    <x>1.0</x>
@@ -101,7 +101,7 @@
  <animation>
   <type>translate</type>
   <object-name>Mixture</object-name>
-  <property>/controls/mixture[0]</property>
+  <property>/controls/engines/engine[0]/mixture</property>
   <factor>-0.1</factor>
   <axis>
    <x>1.0</x>
@@ -113,7 +113,7 @@
  <animation>
   <type>translate</type>
   <object-name>Yoke.1</object-name>
-  <property>/controls/elevator</property>
+  <property>/controls/flight/elevator</property>
   <factor>-0.1</factor>
   <axis>
    <x>1.0</x>
@@ -125,7 +125,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Yoke.1</object-name>
-  <property>/controls/aileron</property>
+  <property>/controls/flight/aileron</property>
   <factor>-45.0</factor>
   <axis>
    <x>1.0</x>
@@ -142,7 +142,7 @@
  <animation>
   <type>translate</type>
   <object-name>Yoke.2</object-name>
-  <property>/controls/elevator</property>
+  <property>/controls/flight/elevator</property>
   <factor>-0.1</factor>
   <axis>
    <x>1.0</x>
@@ -154,7 +154,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Yoke.2</object-name>
-  <property>/controls/aileron</property>
+  <property>/controls/flight/aileron</property>
   <factor>-45.0</factor>
   <axis>
    <x>1.0</x>
@@ -172,7 +172,7 @@
   <type>translate</type>
   <object-name>Pedal.1</object-name>
   <object-name>Pedal.3</object-name>
-  <property>/controls/rudder</property>
+  <property>/controls/flight/rudder</property>
   <factor>0.1</factor>
   <axis>
    <x>1.0</x>
@@ -203,7 +203,7 @@
   <type>translate</type>
   <object-name>Pedal.2</object-name>
   <object-name>Pedal.4</object-name>
-  <property>/controls/rudder</property>
+  <property>/controls/flight/rudder</property>
   <factor>-0.1</factor>
   <axis>
    <x>1.0</x>

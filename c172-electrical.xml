@@ -173,7 +173,7 @@
   <connector>
     <input>Virtual Bus 1</input>
     <output>Starter 1 Power</output>
-    <switch>/controls/starter[0]</switch>
+    <switch>/controls/engines/engine[0]/starter</switch>
     <initial-state>off</initial-state>
   </connector>
 
@@ -232,7 +232,7 @@
   <connector>
     <input>Electrical Bus 1</input>
     <output>Fuel Pump Power</output>
-    <switch>/controls/fuel-pump[0]</switch>
+    <switch>/controls/engines/engine[0]/fuel-pump</switch>
   </connector>
 
   <connector>
