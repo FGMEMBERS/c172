@@ -1,4 +1,4 @@
-<FDM_CONFIG NAME="c172" VERSION="1.57">
+<FDM_CONFIG NAME="c172" VERSION="1.58">
 <!--
 
   File:        c172.xml
@@ -48,7 +48,7 @@
 <!-- Pilot -->
     AC_POINTMASS 180.0 36.0 -14.0 24.0
 <!-- Co-pilot -->
-    AC_POINTMASS 180.0 36.0  14.0 24.0
+<!-- AC_POINTMASS 180.0 36.0  14.0 24.0 -->
     AC_EYEPTLOC  37.0  0.0 48.0
 
   </METRICS>
@@ -79,7 +79,7 @@
      AC_GEAR  LEFT_TIP    43.2 -214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0 FIXED
      AC_GEAR  RIGHT_TIP   43.2  214.8 59.4 10000 2000  0.2   0.2 0.2  FIXED NONE 0 FIXED
 
-</UNDERCARRIAGE>
+  </UNDERCARRIAGE>
 
   <PROPULSION>
 
@@ -146,6 +146,7 @@
 
   </PROPULSION>
 
+
   <FLIGHT_CONTROL NAME="c172">
     <COMPONENT NAME="Pitch Trim Sum" TYPE="SUMMER">
        ID            0
@@ -163,9 +164,10 @@
      </COMPONENT>
      <COMPONENT NAME="Roll Trim Sum" TYPE="SUMMER">
        ID            2
-       INPUT        FG_AILERON_CMD
-       INPUT        FG_ROLL_TRIM_CMD
-       CLIPTO       -1 1
+       INPUT         FG_AILERON_CMD
+       INPUT         FG_ROLL_TRIM_CMD
+       INPUT         AP_AILERON_CMD
+       CLIPTO        -1 1
      </COMPONENT>
      <COMPONENT NAME="Left Aileron Control" TYPE="AEROSURFACE_SCALE">
        ID            3
