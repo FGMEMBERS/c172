@@ -1,7 +1,7 @@
 <FDM_CONFIG NAME="c172" VERSION="1.40">
 <!--
 
-  File:        c172.xml.xml
+  File:        c172.xml
   Author:      Tony Peden
   CVS Version: $Id$
 
@@ -65,7 +65,7 @@
     -->
     </COMMENT>
 
-     AC_GEAR	NOSE        -6.8   0.0 -24.2  1800  600  0.01  0.6 0.02 STEERABLE NONE 20
+     AC_GEAR	NOSE        -6.8   0.0 -20.0  1800  600  0.01  0.6 0.02 STEERABLE NONE 20
      AC_GEAR	LEFT_MAIN   58.2 -43.0 -17.9  5400 1600  0.01  0.6 0.02 CASTERED  LEFT  0
      AC_GEAR	RIGHT_MAIN  58.2  43.0 -17.9  5400 1600  0.01  0.6 0.02 CASTERED  RIGHT 0
      AC_GEAR	TAIL_SKID  188.0  0.0    8.0 20000 1000  0.2   0.2 0.2  FIXED NONE 0
@@ -101,7 +101,7 @@
     -->
     </COMMENT>
 
-    <AC_ENGINE FILE="engIO360C">
+    <AC_ENGINE FILE="eng_io320">
       XLOC   48.0
       YLOC    0.0
       ZLOC   59.4
@@ -302,7 +302,7 @@
        <COEFFICIENT NAME="CYb" TYPE="VALUE">
          Side_force_due_to_beta
          FG_QBAR|FG_WINGAREA|FG_BETA
-         -1.4
+         -0.31
        </COEFFICIENT>
 
        <COEFFICIENT NAME="CYda" TYPE="VALUE">
@@ -316,9 +316,17 @@
          FG_QBAR|FG_WINGAREA|FG_RUDDER_POS
          0.45
       </COEFFICIENT>
-
+      <COEFFICIENT NAME="CYp" TYPE="VALUE">
+         Side_force_due_to_roll_rate
+         FG_QBAR|FG_WINGAREA|FG_BI2VEL|FG_ROLLRATE
+         -0.037
+      </COEFFICIENT>
+      <COEFFICIENT NAME="CYr" TYPE="VALUE">
+         Side_force_due_to_yaw_rate
+         FG_QBAR|FG_WINGAREA|FG_BI2VEL|FG_YAWRATE
+         0.21
+      </COEFFICIENT>
     </AXIS>
-
     <AXIS NAME="ROLL">
 
        <COEFFICIENT NAME="Clb" TYPE="VALUE">
@@ -348,7 +356,7 @@
        <COEFFICIENT NAME="Cldr" TYPE="VALUE">
          Roll_moment_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_RUDDER_POS
-         -0.0147
+         0.0147
         </COEFFICIENT>
 
       </AXIS>
