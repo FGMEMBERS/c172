@@ -30,6 +30,8 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <x>...</x> and <y>...</y> properties.
 -->
 
+<!DOCTYPE PropertyList SYSTEM "panel.dtd">
+
 <PropertyList>
 
  <name>Cessna C172 Skyhawk Panel</name>
@@ -41,162 +43,163 @@ override those by providing <w>..</w> and <h>..</h> properties with the
  <view-height>172</view-height>
 
  <instruments>
+
 <!-- comical tail number -->
-  <tail_number>
-   <path>Aircraft/c172/Instruments/logo.xml</path>
+  <instrument include="../Instruments/logo.xml">
+   <name>Tail Number Plate</name>
    <x>390</x>
    <y>735</y>
    <w>72</w>
    <h>32</h>
-  </tail_number>
+  </instrument>
 
 <!-- engine guage cluster --> 
-  <clock>
-   <path>Aircraft/c172/Instruments/clock.xml</path>
+  <instrument include="../Instruments/clock.xml">
+   <name>Chronometer</name>
    <x>150</x>
    <y>645</y>
    <w>72</w>
    <h>72</h>
-  </clock>
+  </instrument>
 
-  <egt>
-   <path>Aircraft/c172/Instruments/egt.xml</path>
+  <instrument include="../Instruments/egt.xml">
+   <name>Exhaust Gas Temperature Gauge</name>
    <x>150</x>
    <y>568</y>
    <w>72</w>
    <h>72</h>
-  </egt>
+  </instrument>
 
-  <fuel>
-   <path>Aircraft/c172/Instruments/fuel.xml</path>
+  <instrument include="../Instruments/fuel.xml">
+   <name>Fuel Gauge</name>
    <x>75</x>
    <y>568</y>
    <w>72</w>
    <h>72</h>
-  </fuel>
+  </instrument>
 
-  <oil>
-   <path>Aircraft/c172/Instruments/oil.xml</path>
+  <instrument include="../Instruments/oil.xml">
+   <name>Oil Gauge</name>
    <x>75</x>
    <y>488</y>
    <w>72</w>
    <h>72</h>
-  </oil>
+  </instrument>
   
-  <vacamp>
-   <path>Aircraft/c172/Instruments/vacamp.xml</path>
+  <instrument include="../Instruments/vacamp.xml">
+   <name>Vacuum Pressure Gauge</name>
    <x>150</x>
    <y>488</y>
    <w>72</w>
    <h>72</h>
-  </vacamp>
+  </instrument>
 
-  <manifold_pressure>
-   <path>Aircraft/c172/Instruments/manifold-press.xml</path>
+  <instrument include="../Instruments/manifold-press.xml">
+   <name>Manifold Pressure Gauge</name>
    <x>255</x>
    <y>379</y>
    <w>120</w>
    <h>120</h>
-  </manifold_pressure>
+  </instrument>
 <!-- end engine guages cluster -->
 
 <!-- engine controls cluster --> 
  
-  <rpm>
-   <path>Aircraft/c172/Instruments/rpm.xml</path>
+  <instrument include="../Instruments/rpm.xml">
+   <name>RPM Gauge</name>
    <x>520</x>
    <y>379</y>
    <w>120</w>
    <h>120</h>
-  </rpm>
+  </instrument>
 
-  <throttle>
-   <path>Aircraft/c172/Instruments/throttle-knob.xml</path>
+  <instrument include="../Instruments/throttle-knob.xml">
+   <name>Throttle Knob</name>
    <x>785</x>
    <y>360</y>
-  </throttle>
+  </instrument>
 
-  <mixture>
-   <path>Aircraft/c172/Instruments/mixture-knob.xml</path>
+  <instrument include="../Instruments/mixture-knob.xml">
+   <name>Fuel Mixture Knob</name>
    <x>865</x>
    <y>360</y>
-  </mixture>
+  </instrument>
   
 <!--  end engine controls cluster -->
   
 <!-- controls visual feedback cluster --> 
 
-  <flaps>
-   <path>Aircraft/c172/Instruments/flap.xml</path>
+  <instrument include="../Instruments/flap.xml">
+   <name>Flaps Control</name>
    <x>950</x>
    <y>365</y>
-  </flaps>
+  </instrument>
 
-  <brake>
-   <path>Aircraft/c172/Instruments/brakes.xml</path>
+  <instrument include="../Instruments/brakes.xml">
+   <name>Brake Indicator Light</name>
    <x>390</x>
    <y>430</y>
-  </brake>
+  </instrument>
 
-  <controls>
-   <path>Aircraft/c172/Instruments/controls.xml</path>
+  <instrument include="../Instruments/controls.xml">
+   <name>Control Position Indicators</name>
    <x>390</x>
    <y>370</y>
    <w>90</w>
    <h>90</h>
-  </controls>
+  </instrument>
 
 <!-- end controls visual feedback cluster -->
 
 <!-- sacred six -->
 
-  <airspeed>
-   <path>Aircraft/c172/Instruments/airspeed.xml</path>
+  <instrument include="../Instruments/airspeed.xml">
+   <name>Airspeed Indicator</name>
    <x>255</x>
    <y>645</y>
    <w>120</w>
    <h>120</h>
-  </airspeed>
+  </instrument>
 
-  <horizon>
-   <path>Aircraft/c172/Instruments/horizon.xml</path>
+  <instrument include="../Instruments/horizon.xml">
+   <name>Attitude Gyro</name>
    <x>390</x>
    <y>645</y>
    <w>120</w>
    <h>120</h>
-  </horizon>
+  </instrument>
 
-  <altimeter>
-   <path>Aircraft/c172/Instruments/altimeter.xml</path>
+  <instrument include="../Instruments/altimeter.xml">
+   <name>Altimeter</name>
    <x>520</x>
    <y>645</y>
    <w>120</w>
    <h>120</h>
-  </altimeter>
+  </instrument>
 
-  <turn>
-   <path>Aircraft/c172/Instruments/turn.xml</path>
+  <instrument include="../Instruments/turn.xml">
+   <name>Turn Coordinator</name>
    <x>255</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
-  </turn>
+  </instrument>
 
-  <gyro>
-   <path>Aircraft/c172/Instruments/gyro.xml</path>
+  <instrument include="../Instruments/gyro.xml">
+   <name>Directional Gyro</name>
    <x>390</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
-  </gyro>
+  </instrument>
 
-  <vertical>
-   <path>Aircraft/c172/Instruments/vertical.xml</path>
+  <instrument include="../Instruments/vertical.xml">
+   <name>Vertical Velocity Indicator</name>
    <x>520</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
-  </vertical>
+  </instrument>
 
 <!-- end sacred six -->
 
@@ -204,78 +207,78 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 
 <!-- radio nav instruments --> 
 
-  <nav1>
-   <path>Aircraft/c172/Instruments/nav1.xml</path>
+  <instrument include="../Instruments/nav1.xml">
+   <name>VOR 1 Gauge</name>
    <x>665</x>
    <y>645</y>
    <w>120</w>
    <h>120</h>
-  </nav1>
+  </instrument>
 
-  <nav2>
-   <path>Aircraft/c172/Instruments/nav2.xml</path>
+  <instrument include="../Instruments/nav2.xml">
+   <name>VOR 2 Gauge</name>
    <x>665</x>
    <y>512</y>
    <w>120</w>
    <h>120</h>
-  </nav2>
+  </instrument>
 
-  <adf>
-   <path>Aircraft/c172/Instruments/adf.xml</path>
+  <instrument include="../Instruments/adf.xml">
+   <name>ADF Gauge</name>
    <x>665</x>
    <y>379</y>
    <w>120</w>
    <h>120</h>
-  </adf>
+  </instrument>
 
 <!-- end radio nav instruments -->
 
 
 <!-- radio stack -->
 
-  <dme>
-   <path>Aircraft/c172/Instruments/dme.xml</path>
+  <instrument include="../Instruments/dme.xml">
+   <name>DME Display</name>
    <x>880</x>
    <y>671</y>
-  </dme>
+  </instrument>
   
-  <markerbeacon>
-   <path>Aircraft/c172/Instruments/markerbeacon.xml</path>
+  <instrument include="../Instruments/markerbeacon.xml">
+   <name>Marker Beacon Indicators</name>
    <x>786</x>
    <y>651</y>
-   </markerbeacon>
+   </instrument>
       
-  <navcom1-radio>
-   <path>Aircraft/c172/Instruments/navcom1-radio.xml</path>
+  <instrument include="../Instruments/navcom1-radio.xml">
+   <name>NavCom 1 Radio</name>
    <x>880</x>
    <y>607</y>
-  </navcom1-radio>
+  </instrument>
 
-  <navcom2-radio>
-   <path>Aircraft/c172/Instruments/navcom2-radio.xml</path>
+  <instrument include="../Instruments/navcom2-radio.xml">
+   <name>NavCom 2 Radio</name>
    <x>880</x>
    <y>542</y>
-  </navcom2-radio>
+  </instrument>
 
-  <adf-radio>
-   <path>Aircraft/c172/Instruments/adf-radio.xml</path>
+  <instrument include="../Instruments/adf-radio.xml">
+   <name>ADF Radio</name>
    <x>880</x>
    <y>479</y>
-  </adf-radio>
+  </instrument>
 
-  <autopilot>
-   <path>Aircraft/c172/Instruments/autopilot.xml</path>
+  <instrument include="../Instruments/autopilot.xml">
+   <name>Autopilot</name>
    <x>880</x>
    <y>431</y>
-  </autopilot>
+  </instrument>
 
 <!-- end radio stack -->
 
-  <magcompass>
-   <path>Aircraft/c172/Instruments/magcompass.xml</path>
+  <instrument include="../Instruments/magcompass.xml">
+   <name>Magnetic Compass</name>
    <x>768</x>
    <y>782</y>
-  </magcompass>
+  </instrument>
  </instruments>
 
 </PropertyList>
