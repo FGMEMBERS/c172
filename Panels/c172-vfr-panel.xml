@@ -150,13 +150,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
 <!-- end engine controls cluster -->
   
 <!-- controls visual feedback cluster -->  
-
+<!--
   <instrument include="../../Instruments/flap.xml">
    <name>Flaps Control</name>
    <x>950</x>
    <y>55</y>
   </instrument>
-
+-->
   <instrument include="../../Instruments/brakes.xml">
    <name>Brake Indicator Light</name>
    <x>412</x>
@@ -304,12 +304,22 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <x>880</x>
    <y>185</y>
   </instrument>
-
+<!--
   <instrument include="../../Instruments/autopilot.xml">
    <name>Autopilot</name>
    <x>880</x>
    <y>127</y>
   </instrument>
+-->
+
+  <instrument include="../../Instruments/KAP140TwoAxis.xml">
+   <name>KAP140 Autopilot</name>
+   <x>880</x>
+   <y>127</y>
+   <w>256</w>
+   <h>64</h>
+  </instrument>
+
 
 <!-- end radio stack -->
 
