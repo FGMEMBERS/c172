@@ -92,7 +92,7 @@
   <type>rotate</type>
   <object-name>LeftElevator</object-name>
   <property>/controls/elevator</property>
-  <factor>-15</factor> <!-- check -->
+  <factor>15</factor> <!-- check -->
   <center>
    <x-m>5.1</x-m>
    <y-m>0.0</y-m>
@@ -109,7 +109,7 @@
   <type>rotate</type>
   <object-name>RightElevator</object-name>
   <property>/controls/elevator</property>
-  <factor>-15</factor> <!-- check -->
+  <factor>15</factor> <!-- check -->
   <center>
    <x-m>5.1</x-m>
    <y-m>0.0</y-m>
