@@ -132,7 +132,7 @@
    <path>Sounds/flaps.wav</path>
    <property>/surface-positions/flap-pos-norm</property>
    <volume>
-    <offset>0.25</offset>
+    <factor>0.15</factor>
    </volume>
   </flap>
 
