@@ -45,7 +45,10 @@
     AC_EMPTYWT   1700
     AC_AERORP    43.2  0.0 59.4
     AC_CGLOC     41.0  0.0 36.5
-<!--    AC_POINTMASS 180.0 36.0 -14.0 24.0 -->
+<!-- Pilot -->
+    AC_POINTMASS 180.0 36.0 -14.0 24.0
+<!-- Co-pilot -->
+    AC_POINTMASS 180.0 36.0  14.0 24.0
     AC_EYEPTLOC  37.0  0.0 48.0
     AC_ALPHALIMITS -0.087 0.28
 
@@ -378,9 +381,9 @@
          3
          FG_BETA
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN
-         -0.349  0.0311
+         -0.349  0.0322
           0      0
-          0.349 -0.0311
+          0.349 -0.0322
        </COEFFICIENT>
 
        <COEFFICIENT NAME="Clp" TYPE="VALUE">
