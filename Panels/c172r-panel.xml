@@ -29,7 +29,7 @@ override those by providing <w>Aircraft</w> and <h>..</h> properties.
 <PropertyList>
 
  <name>Cessna C172 Skyhawk VFR Panel</name>
- <background>Aircraft/c172/Panels/Textures/panel.rgb</background>
+ <background>Aircraft/c172/Panels/Textures/panel-c172r-bg.rgb</background>
  <w>1280</w>
  <h>1280</h>
  <y-offset>-800</y-offset>
@@ -276,9 +276,9 @@ override those by providing <w>Aircraft</w> and <h>..</h> properties.
   <instrument include="../../Instruments/xpdr-kt76c.xml">
    <name>Bendix/King KT 76C Class 1A Transponder</name>
    <x>747</x>
-   <y>860</y>
+   <y>858</y>
    <w>191</w>
-   <h>47</h>
+   <h>45</h>
   </instrument>
 
   <!-- MISSING: transponder -->
