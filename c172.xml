@@ -1,4 +1,4 @@
-<FDM_CONFIG NAME="c172" VERSION="1.50">
+<FDM_CONFIG NAME="c172" VERSION="1.55">
 <!--
 
   File:        c172.xml
@@ -298,6 +298,11 @@
          FG_QBAR|FG_WINGAREA|FG_ELEVATOR_POS
          0.06
        </COEFFICIENT>
+       <COEFFICIENT NAME="CDbeta" TYPE="VALUE">
+         Drag_due_to_sideslip
+         FG_QBAR|FG_WINGAREA|FG_ABETA
+         0.14
+       </COEFFICIENT>
 
     </AXIS>
 
@@ -334,10 +339,14 @@
 
     <AXIS NAME="ROLL">
 
-       <COEFFICIENT NAME="Clb" TYPE="VALUE">
+       <COEFFICIENT NAME="Clb" TYPE="VECTOR">
          Roll_moment_due_to_beta
-         FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_BETA
-         -0.089
+         3
+         FG_BETA
+         FG_QBAR|FG_WINGAREA|FG_WINGSPAN
+         -0.349  0.0311
+          0      0
+          0.349 -0.0311
        </COEFFICIENT>
 
        <COEFFICIENT NAME="Clp" TYPE="VALUE">
@@ -434,7 +443,7 @@
        <COEFFICIENT NAME="Cndr" TYPE="VALUE">
          Yaw_moment_due_to_rudder
          FG_QBAR|FG_WINGAREA|FG_WINGSPAN|FG_RUDDER_POS
-         -0.0657
+         -0.043
        </COEFFICIENT>
 
     </AXIS>
