@@ -178,7 +178,7 @@
      </COMPONENT>
       <COMPONENT NAME="Right Aileron Control" TYPE="AEROSURFACE_SCALE">
        ID            4
-       INPUT         FG_AILERON_CMD
+       INPUT         2
        MIN          -20
        MAX           15
        INVERT
