@@ -123,19 +123,13 @@ override those by providing <w>..</w> and <h>..</h> properties with the
    <x>865</x>
    <y>360</y>
   </instrument>
-<!--
+
   <instrument include="../Instruments/magneto-switch.xml">
    <name>Magneto switch panel</name>
    <x>115</x>
    <y>358</y>
   </instrument>
 
-  <instrument include="../Instruments/toggle-switch.xml">
-   <name>toggle switch </name>
-   <x>115</x>
-   <y>350</y>
-  </instrument>
--->
 <!-- end engine controls cluster -->
   
 <!-- controls visual feedback cluster -->  
