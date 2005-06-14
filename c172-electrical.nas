@@ -29,6 +29,11 @@ init_electrical = func {
     battery = BatteryClass.new();
     alternator = AlternatorClass.new();
 
+    # set initial switch postiions
+    setprop("/controls/engines/engine[0]/master-bat", 1);
+    setprop("/controls/engines/engine[0]/master-alt", 1);
+    setprop("/controls/switches/master-avionics", 1);
+
     # Request that the update fuction be called next frame
     settimer(update_electrical, 0);
 }
