@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
  
-<!-- 28 Volt electrical system -->
+<!-- Cessna 172S electrical system -->
 
 <PropertyList>
 
@@ -10,8 +10,9 @@
     <name>Battery 1</name>
     <prop>/systems/electrical/suppliers/battery[0]</prop>
     <kind>battery</kind>
-    <volts>28</volts> <!-- needs to be > 24.5, but this is a guess -->
-    <amps>60</amps>   <!-- I have no idea! -->
+    <volts>24</volts>         <!-- from the poh -->
+    <amp-hours>25</amp-hours> <!-- a WAG! -->
+    <charge-amps>7.0</charge-amps>
   </supplier>
 
   <supplier>
@@ -34,6 +35,12 @@
   <!-- Bus list -->
 
   <bus>
+    <!-- this is a fictitious entity replacing a more complex -->
+    <!-- arrangement of relays. -->
+    <name>Virtual Bus 1</name>
+  </bus>
+
+  <bus>
     <name>Electrical Bus 1</name>
     <prop>/systems/electrical/outputs/bus[0]</prop>
   </bus>
@@ -51,16 +58,11 @@
   <bus>
     <name>Avionics Bus 1</name>
     <prop>/systems/electrical/outputs/bus-avionics[0]</prop>
- </bus>
+  </bus>
 
   <bus>
     <name>Avionics Bus 2</name>
     <prop>/systems/electrical/outputs/bus-avionics[1]</prop>
-  </bus>
-
-  <bus>
-    <!-- this is a fictitious entity replacing a more complex arrangement of relays -->
-    <name>Virtual Bus 1</name>
   </bus>
 
   <!-- Specific Outputs -->
@@ -239,6 +241,13 @@
     </switch>
   </connector>
 
+  <!-- connect battery charger -->
+
+  <connector>
+    <input>Virtual Bus 1</input>
+    <output>Battery 1</output>
+  </connector>
+  
   <!-- connect bus 1 & 2 -->
 
   <connector>
@@ -261,6 +270,10 @@
 
   <connector>
     <input>Electrical Bus 1</input>
+    <output>Essential/Cross Feed Bus</output>
+  </connector>
+
+  <connector>
     <input>Electrical Bus 2</input>
     <output>Essential/Cross Feed Bus</output>
   </connector>
