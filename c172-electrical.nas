@@ -29,7 +29,7 @@ init_electrical = func {
     battery = BatteryClass.new();
     alternator = AlternatorClass.new();
 
-    # set initial switch postiions
+    # set initial switch positions
     setprop("/controls/engines/engine[0]/master-bat", 1);
     setprop("/controls/engines/engine[0]/master-alt", 1);
     setprop("/controls/switches/master-avionics", 1);
