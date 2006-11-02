@@ -110,7 +110,7 @@ AlternatorClass = {};
 AlternatorClass.new = func {
     obj = { parents : [AlternatorClass],
             rpm_source : "/engines/engine[0]/rpm",
-            rpm_threshold : 600.0,
+            rpm_threshold : 800.0,
             ideal_volts : 28.0,
             ideal_amps : 60.0 };
     setprop( obj.rpm_source, 0.0 );
@@ -122,7 +122,7 @@ AlternatorClass.new = func {
 #
 
 AlternatorClass.apply_load = func( amps, dt ) {
-    # Scale alternator output for rpms < 600.  For rpms >= 600
+    # Scale alternator output for rpms < 800.  For rpms >= 800
     # give full output.  This is just a WAG, and probably not how
     # it really works but I'm keeping things "simple" to start.
     rpm = getprop( me.rpm_source );
@@ -140,7 +140,7 @@ AlternatorClass.apply_load = func( amps, dt ) {
 #
 
 AlternatorClass.get_output_volts = func {
-    # scale alternator output for rpms < 600.  For rpms >= 600
+    # scale alternator output for rpms < 800.  For rpms >= 800
     # give full output.  This is just a WAG, and probably not how
     # it really works but I'm keeping things "simple" to start.
     rpm = getprop( me.rpm_source );
@@ -158,7 +158,7 @@ AlternatorClass.get_output_volts = func {
 #
 
 AlternatorClass.get_output_amps = func {
-    # scale alternator output for rpms < 600.  For rpms >= 600
+    # scale alternator output for rpms < 800.  For rpms >= 800
     # give full output.  This is just a WAG, and probably not how
     # it really works but I'm keeping things "simple" to start.
     rpm = getprop( me.rpm_source );
@@ -193,8 +193,14 @@ update_electrical = func {
 #
 
 update_virtual_bus = func( dt ) {
-    battery_volts = battery.get_output_volts();
-    alternator_volts = alternator.get_output_volts();
+    serviceable = getprop("/systems/electrical/serviceable");
+    if ( serviceable ) {
+	battery_volts = battery.get_output_volts();
+	alternator_volts = alternator.get_output_volts();
+    } else {
+	battery_volts = 0.0;
+	alternator_volts = 0.0;
+    }
     external_volts = 0.0;
     load = 0.0;
 
