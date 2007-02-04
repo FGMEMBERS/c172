@@ -33,6 +33,7 @@ init_electrical = func {
     setprop("/controls/engines/engine[0]/master-bat", 1);
     setprop("/controls/engines/engine[0]/master-alt", 1);
     setprop("/controls/switches/master-avionics", 1);
+    setprop("/systems/electrical/outputs/autopilot",0.0);
 
     # Request that the update fuction be called next frame
     settimer(update_electrical, 0);
